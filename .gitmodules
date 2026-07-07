@@ -1,0 +1,3 @@
+[submodule "themes/hugo-agency-web"]
+	path = themes/hugo-agency-web
+	url = https://github.com/writeonlycode/hugo-agency-web.git

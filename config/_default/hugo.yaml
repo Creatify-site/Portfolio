@@ -1,0 +1,7 @@
+baseURL: "/"
+title: "Creatify"
+summaryLength: 20
+
+# services:
+#   googleAnalytics:
+#     id: G-MEASUREMENT_ID

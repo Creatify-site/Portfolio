@@ -1,0 +1,9 @@
+{
+ "compilerOptions": {
+  "paths": {
+   "*": [
+    "..\\themes\\hugo-agency-web\\assets\\*"
+   ]
+  }
+ }
+}

@@ -1,0 +1,23 @@
+title: "Creatify"
+description: "Creatify is a digital agency crafting mobile, web, and brand experiences that help businesses grow."
+images:
+  - "images/home/hero/bill-sitting.png"
+
+# logo: "images/shared/logo.png"
+
+favicons:
+  themeColor: "#FFFFFF"
+  backgroundColor: "#FFFFFF"
+  faviconColor: "#000000"
+
+contact:
+  - "hello@creatify.agency"
+  - "207.555.0119"
+
+social:
+  dribbble: "#"
+  instagram: "#"
+  facebook: "#"
+  twitter: "#"
+
+copyright: "© 2026 Creatify. All Rights Reserved"
