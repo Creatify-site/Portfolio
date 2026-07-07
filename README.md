@@ -40,10 +40,19 @@ git submodule update --remote --merge themes/hugo-agency-web
 ## Deployment
 
 ```bash
-hugo
+hugo --gc --minify
 ```
 
 This generates a static site in `public/`, ready to deploy to Netlify, Vercel, or any static host.
+
+### Deploying to Vercel
+
+This repo includes a `vercel.json` with the build settings Vercel needs (`hugo --gc --minify`, output `public/`, `npm install` for the Tailwind CLI). To connect it:
+
+1. [Import the repo](https://vercel.com/new) into Vercel.
+2. In **Project Settings → Git**, enable **Git Submodules** — the theme is a submodule (`themes/hugo-agency-web`) and won't be cloned otherwise.
+3. In **Project Settings → Environment Variables**, add `HUGO_VERSION` = `0.163.2` so Vercel builds with the same Hugo version used locally (must be extended edition, which Vercel provides automatically for recent versions).
+4. Deploy. Every push to `main` will auto-deploy after this.
 
 ## License
 
