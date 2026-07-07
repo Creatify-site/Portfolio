@@ -1,14 +1,14 @@
 enable: true
 
-title: "We build **digital products** that grow your business."
-text: "Creatify is a digital agency crafting mobile apps, websites, and brand experiences. We partner with startups and businesses to design, build, and launch products people love."
+title: "DIGITAL MEDIA AGENCY FOR **BUSINESSES** THAT GROW"
+text: "Creatify is a leading digital media agency specialized in Web development, Shopify Development, WordPress Development, Search Engine Optimization, Facebook Marketing and Google Adwords. We help businesses to grow their online presence and increase their revenue through our innovative digital solutions."
 
 buttons:
   - label: "Contact Us"
-    link: "#"
+    link: "contact"
 
   - label: "View More"
-    link: ""
+    link: "services"
 
 image: "images/home/hero/bill-sitting.png"
 
