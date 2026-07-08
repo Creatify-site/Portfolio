@@ -2,6 +2,6 @@ baseURL: "https://creatify.site/"
 title: "Creatify"
 summaryLength: 20
 
-# services:
-#   googleAnalytics:
-#     id: G-MEASUREMENT_ID
+services:
+  googleAnalytics:
+    id: G-XVNF52YS4F
