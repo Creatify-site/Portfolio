@@ -24,3 +24,9 @@ module:
 taxonomies:
   series: "series"
   tags: "tags"
+  category: "categories"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -1,0 +1,39 @@
+<section id="blog" class="blog relative py-8 xl:py-24">
+  <div class="container mx-auto px-4">
+    {{ with .title }}
+      <h1 class="markdown-title xl:max-w-2/3 mx-auto text-center text-[#252525] font-semibold text-4xl leading-normal mb-4">{{ . | markdownify }}</h1>
+    {{ end }}
+    {{ with .text }}
+      <p class="xl:max-w-1/2 mx-auto text-center text-[#868686] mb-14">{{ . }}</p>
+    {{ end }}
+
+    {{ $blogSection := site.GetPage "blog" }}
+    {{ if $blogSection }}
+      {{ $posts := first 4 $blogSection.RegularPages.ByDate.Reverse }}
+      <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-14">
+        {{ range $posts }}
+          <a href="{{ .Permalink }}" class="group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300">
+            <div class="aspect-video overflow-hidden">
+              {{ with .Params.image }}
+                {{ partial "utilities/image" (dict "src" . "alt" $.Title "class" "w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500") }}
+              {{ end }}
+            </div>
+            <div class="flex flex-col gap-2 p-6">
+              {{ with (index .Params.categories 0) }}
+                <span class="text-primary text-xs font-semibold uppercase tracking-wide">{{ . }}</span>
+              {{ end }}
+              <h2 class="text-lg font-medium text-[#252525] leading-snug">{{ .Title }}</h2>
+              <time class="text-xs text-[#868686]" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .button }}
+      <div class="flex items-center justify-center">
+        {{ partial "components/button/primary" (dict "label" .label "href" .link) }}
+      </div>
+    {{ end }}
+  </div>
+</section>

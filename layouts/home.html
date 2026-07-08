@@ -3,6 +3,7 @@
   {{ with site.Data.home.services }}{{ if .enable }}{{ partial "blocks/home/services" . }}{{ end }}{{ end }}
   {{ with site.Data.home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
   {{ with site.Data.home.about }}{{ if .enable }}{{ partial "blocks/home/about" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.blog }}{{ if .enable }}{{ partial "blocks/home/blog" . }}{{ end }}{{ end }}
   {{ with site.Data.home.clients }}{{ if .enable }}{{ partial "blocks/home/clients" . }}{{ end }}{{ end }}
   {{ with site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials" . }}{{ end }}{{ end }}
   {{ with site.Data.home.highlights }}{{ if .enable }}{{ partial "blocks/home/highlights" . }}{{ end }}{{ end }}
