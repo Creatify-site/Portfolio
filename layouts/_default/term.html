@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-16">
+      <div class="mx-auto xl:max-w-1/2 text-center">
+        {{ with .Title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-bold xl:leading-normal mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+        <p class="text-lg text-[#777777]">{{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</p>
+      </div>
+    </div>
+
+    {{ if .Pages }}
+      <div class="container mx-auto px-4 grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-16 mb-28">
+        {{ range .Pages.ByDate.Reverse }}
+          <a href="{{ .Permalink }}" class="group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300">
+            <div class="aspect-video overflow-hidden">
+              {{ with .Params.image }}
+                {{ partial "utilities/image" (dict "src" . "alt" $.Title "class" "w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500") }}
+              {{ else }}
+                <div class="w-full h-full bg-primary/10"></div>
+              {{ end }}
+            </div>
+            <div class="flex flex-col gap-2 p-6">
+              {{ with (index .Params.categories 0) }}
+                <span class="text-primary text-xs font-semibold uppercase tracking-wide">{{ . }}</span>
+              {{ end }}
+              <h2 class="text-lg font-medium text-[#252525] leading-snug">{{ .Title }}</h2>
+              <div class="text-sm text-[#868686] leading-relaxed line-clamp-3">{{ or .Description .Summary }}</div>
+              <time class="text-xs text-[#868686] mt-2">{{ .Date.Format "Jan 2, 2006" }}</time>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <div class="flex items-center justify-center mb-28">
+      {{ partial "pagination" . }}
+    </div>
+  </section>
+{{ end }}

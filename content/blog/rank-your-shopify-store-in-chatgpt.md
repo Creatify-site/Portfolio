@@ -2,7 +2,7 @@
 title: "Shopify Agentic Storefront – RANK Your Shopify Store in ChatGPT"
 draft: false
 date: 2026-06-28
-image: "images/blog/html/Rank.webp.webp"
+image: "images/blog/html/Rank.webp"
 description: "Discover how Shopify Agentic Storefronts can help your store rank in ChatGPT and AI-powered search systems. Learn how to optimize your Shopify store for AI discovery, improve product visibility, and prepare your ecommerce brand for the future of conversational shopping and agentic commerce."
 categories:
   - Shopify
