@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <section class="relative py-16 xl:py-24 overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto xl:max-w-2/3 text-center mb-16">
+        <div class="flex items-center justify-center text-3xl text-primary bg-primary/10 size-20 rounded-2xl mx-auto mb-6">
+          <i class="{{ .Params.icon }}"></i>
+        </div>
+        {{ with .Params.kicker }}
+          <span class="text-primary font-semibold uppercase tracking-wide text-sm">{{ . }}</span>
+        {{ end }}
+        {{ with .Title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-semibold leading-normal mt-2 mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-[#5C5C5C] leading-relaxed text-lg">{{ . }}</p>
+        {{ end }}
+      </div>
+
+      <div class="prose prose-lg mx-auto xl:max-w-3xl mb-16">
+        {{ .Content }}
+      </div>
+
+      <div class="flex items-center justify-center gap-4">
+        {{ partial "components/button/primary" (dict "label" "Get a Free Quote" "href" "/contact") }}
+        {{ partial "components/button/outline" (dict "label" "View All Services" "href" "/services") }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,61 @@
+{{ define "main" }}
+  <section class="relative py-16 xl:py-24">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto xl:max-w-2/3 text-center mb-16">
+        {{ with .Title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-semibold leading-normal mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-[#5C5C5C] leading-relaxed text-lg">{{ . }}</p>
+        {{ end }}
+      </div>
+
+      <div class="grid xl:grid-cols-5 gap-12 xl:max-w-4xl mx-auto">
+        <form
+          class="xl:col-span-3 flex flex-col gap-5"
+          action="mailto:{{ index site.Params.contact 0 }}"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-[#252525]" for="contact-name">Name</label>
+            <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="text" id="contact-name" name="Name" required />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-[#252525]" for="contact-email">Email</label>
+            <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="email" id="contact-email" name="Email" required />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-[#252525]" for="contact-message">What are you looking for help with?</label>
+            <textarea class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" id="contact-message" name="Message" rows="5" required></textarea>
+          </div>
+          <button class="bg-primary hover:bg-primary/90 rounded-lg px-14 py-3 text-white duration-500 cursor-pointer self-start" type="submit">
+            Send Message
+          </button>
+          <p class="text-xs text-[#868686]">This opens your email app with the message pre-filled — nothing is sent automatically.</p>
+        </form>
+
+        <div class="xl:col-span-2 flex flex-col gap-8 p-8 rounded-2xl bg-[#F4F4F4] h-fit">
+          <div>
+            <h2 class="text-lg font-medium text-[#252525] mb-2">Email</h2>
+            <a class="text-primary hover:underline" href="mailto:{{ index site.Params.contact 0 }}">{{ index site.Params.contact 0 }}</a>
+          </div>
+          <div>
+            <h2 class="text-lg font-medium text-[#252525] mb-2">Phone</h2>
+            <a class="text-primary hover:underline" href="tel:{{ index site.Params.contact 1 }}">{{ index site.Params.contact 1 }}</a>
+          </div>
+          <div>
+            <h2 class="text-lg font-medium text-[#252525] mb-4">Follow Us</h2>
+            <div class="flex items-center gap-4">
+              {{ range site.Data.shared.footer.social }}
+                <a class="flex items-center justify-center text-sm size-10 rounded-full bg-white shadow hover:scale-110 hover:text-primary duration-300" aria-label="{{ .title }}" href="{{ .link }}">
+                  <i class="{{ .icon }}"></i>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

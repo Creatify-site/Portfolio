@@ -9,7 +9,53 @@ main:
 
   - name: "Services"
     url: "/services"
+    identifier: "services"
     weight: 3
+
+  - name: "Web Development"
+    url: "/services/web-development"
+    parent: "services"
+    weight: 1
+
+  - name: "Shopify Development"
+    url: "/services/shopify-development"
+    parent: "services"
+    weight: 2
+
+  - name: "WordPress Development"
+    url: "/services/wordpress-development"
+    parent: "services"
+    weight: 3
+
+  - name: "SEO"
+    url: "/services/seo"
+    parent: "services"
+    weight: 4
+
+  - name: "Facebook Marketing"
+    url: "/services/facebook-marketing"
+    parent: "services"
+    weight: 5
+
+  - name: "Google Ads"
+    url: "/services/google-ads"
+    parent: "services"
+    weight: 6
+
+  - name: "Graphic Designing"
+    url: "/services/graphic-designing"
+    parent: "services"
+    weight: 7
+
+  - name: "Video Editing"
+    url: "/services/video-editing"
+    parent: "services"
+    weight: 8
+
+  - name: "Digital Strategy"
+    url: "/services/digital-strategy"
+    parent: "services"
+    weight: 9
 
   - name: "Blog"
     url: "/blog"
