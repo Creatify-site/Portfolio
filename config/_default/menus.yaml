@@ -1,6 +1,6 @@
 main:
   - name: "Home"
-    url: "/home"
+    url: "/"
     weight: 1
 
   - name: "About Us"
@@ -22,7 +22,7 @@ buttons:
 
 footer:
   - name: "Home"
-    url: "/home"
+    url: "/"
     weight: 1
 
   - name: "About Us"

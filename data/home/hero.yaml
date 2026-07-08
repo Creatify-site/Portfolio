@@ -5,8 +5,8 @@ text: "Creatify is a leading digital media agency specialized in Web development
 
 buttons:
   - label: "Contact Us"
-    link: "contact"
+    link: "/contact"
 
   - label: "View More"
-    link: "services"
+    link: "/services"
 

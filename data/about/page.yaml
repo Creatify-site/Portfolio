@@ -1,0 +1,34 @@
+kicker: "About Creatify"
+title: "The Story Behind **Creatify**"
+intro: "Creatify is a digital media agency built for small and mid-sized businesses that want senior-level web, Shopify, WordPress, and marketing work — without the overhead of a big agency retainer. We handle the build, the storefront, and the campaigns, so business owners can focus on running the business."
+
+mission: "Our mission is to give small and mid-sized businesses the same quality of digital work larger brands pay agency-of-record rates for, without the overhead."
+vision: "We want to be the team a growing business calls first — for a new website, a Shopify store, or a marketing campaign — because they know it'll get done right, on time, and without the back-and-forth."
+
+values:
+  - icon: "fas fa-bolt"
+    title: "Direct Communication"
+    text: "No account managers relaying messages. You talk to the person doing the work."
+
+  - icon: "fas fa-user-graduate"
+    title: "Senior Talent Only"
+    text: "Every project is handled by people who've done it before, not a junior learning on your dime."
+
+  - icon: "fas fa-chart-line"
+    title: "Built to Perform"
+    text: "Fast, clean, and measured against real outcomes — not just how it looks in a screenshot."
+
+  - icon: "fas fa-hand-holding-dollar"
+    title: "Fair, Transparent Pricing"
+    text: "Straightforward quotes upfront. No surprise line items once the project starts."
+
+team:
+  - name: "Muhammad Talha"
+    role: "Founder"
+    image: ""
+    bio: "Muhammad Talha founded Creatify with a simple goal: give growing businesses access to senior-level digital work without enterprise-agency overhead. He leads strategy and client relationships, making sure every project ties back to a real business outcome, not just a deliverable."
+
+  - name: "Muhammad Ali Sajid"
+    role: "Co-Founder"
+    image: "images/about/ali-sajid.webp"
+    bio: "Muhammad Ali Sajid co-founded Creatify and leads the technical side of every project. He's a Shopify Partner with hands-on experience building and customizing storefronts for e-commerce brands, from custom sections to performance optimization."

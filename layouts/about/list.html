@@ -1,0 +1,78 @@
+{{ define "main" }}
+  {{ $page := site.Data.about.page }}
+
+  <section class="relative py-16 xl:py-24 overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto xl:max-w-2/3 text-center mb-16">
+        {{ with $page.kicker }}
+          <span class="text-primary font-semibold uppercase tracking-wide text-sm">{{ . }}</span>
+        {{ end }}
+        {{ with $page.title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-semibold leading-normal mt-2 mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with $page.intro }}
+          <p class="text-[#5C5C5C] leading-relaxed text-lg">{{ . }}</p>
+        {{ end }}
+      </div>
+
+      <div class="grid xl:grid-cols-2 gap-8 mb-24">
+        {{ with $page.mission }}
+          <div class="flex flex-col gap-4 p-10 rounded-2xl bg-[#F4F4F4]">
+            <h2 class="text-2xl font-semibold">Our Mission</h2>
+            <p class="text-[#545454] leading-relaxed">{{ . }}</p>
+          </div>
+        {{ end }}
+        {{ with $page.vision }}
+          <div class="flex flex-col gap-4 p-10 rounded-2xl bg-primary text-white">
+            <h2 class="text-2xl font-semibold">Our Vision</h2>
+            <p class="leading-relaxed">{{ . }}</p>
+          </div>
+        {{ end }}
+      </div>
+
+      {{ if $page.values }}
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-semibold">How We <span class="text-primary">Work</span></h2>
+        </div>
+        <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-28">
+          {{ range $page.values }}
+            <div class="flex flex-col gap-4 p-8 rounded-2xl border border-[#EAEAEA]">
+              <div class="flex items-center justify-center text-2xl text-primary bg-primary/10 size-14 rounded-2xl">
+                <i class="{{ .icon }}"></i>
+              </div>
+              <h3 class="text-lg font-medium text-[#252525]">{{ .title }}</h3>
+              <p class="text-sm text-[#868686] leading-relaxed">{{ .text }}</p>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ if $page.team }}
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-semibold">Meet The <span class="text-primary">Team</span></h2>
+          <p class="text-[#868686] mt-4">The two people behind every project.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 xl:max-w-3xl mx-auto gap-10">
+          {{ range $page.team }}
+            <div class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl border border-[#EAEAEA]">
+              {{ if .image }}
+                {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "size-32 rounded-full object-cover object-center") }}
+              {{ else }}
+                {{ $initials := "" }}
+                {{ range (split .name " ") }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end }}
+                <div class="flex items-center justify-center size-32 rounded-full bg-primary/10 text-primary text-3xl font-semibold">
+                  {{ $initials }}
+                </div>
+              {{ end }}
+              <div>
+                <h3 class="text-xl font-semibold">{{ .name }}</h3>
+                <span class="text-primary text-sm font-medium">{{ .role }}</span>
+              </div>
+              <p class="text-sm text-[#868686] leading-relaxed">{{ .bio }}</p>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
