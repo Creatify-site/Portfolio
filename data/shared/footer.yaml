@@ -10,17 +10,14 @@ contact:
       link: "tel:+923166710837"
 
 social:
-  - title: "Facebook"
-    icon: "fa-brands fa-facebook"
-    link: "https://www.facebook.com/creatify"
-  - title: "Twitter"
-    icon: "fa-brands fa-twitter"
-    link: "#"
   - title: "Instagram"
     icon: "fa-brands fa-instagram"
     link: "https://www.instagram.com/creatify.site"
   - title: "LinkedIn"
     icon: "fa-brands fa-linkedin"
     link: "https://www.linkedin.com/company/creatify-site"
+  - title: "GitHub"
+    icon: "fa-brands fa-github"
+    link: "https://github.com/creatify-site"
 
 copyright: "Copyright ® 2026 Creatify All rights Reserved"

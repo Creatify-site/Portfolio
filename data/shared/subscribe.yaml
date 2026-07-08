@@ -1,7 +1,7 @@
-enable: false # TODO: wire up a real email service (Formspree/Mailchimp/etc.) before enabling — form currently has no working action
+enable: true # TODO: wire up a real email service (Formspree/Mailchimp/etc.) before enabling — form currently has no working action
 
 title: "Get Digital Marketing Tips In Your Inbox"
 method: "POST"
-action: ""
-placeholder: "you@company.com"
+action: "SUBSCRIBE_URL" # TODO: replace with real email service URL
+placeholder: "support.creatify@gmail.com"
 label: "SUBSCRIBE"

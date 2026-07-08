@@ -1,7 +1,7 @@
 title: "Creatify"
 description: "Creatify is a digital agency crafting mobile, web, and brand experiences that help businesses grow."
 images:
-  - "images/home/hero/bill-sitting.png"
+  - "images/home/features/feature-1.webp"
 
 # logo: "images/shared/logo.png"
 
@@ -15,9 +15,7 @@ contact:
   - "0316-6710837"
 
 social:
-  dribbble: "#"
-  instagram: "#"
-  facebook: "#"
-  twitter: "#"
+  instagram: "creatify.site"
+  facebook: "creatify"
 
 copyright: "© 2026 Creatify. All Rights Reserved"

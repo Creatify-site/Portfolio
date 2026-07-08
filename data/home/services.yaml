@@ -1,7 +1,7 @@
 enable: true
 
 title: "Our Core **Expertise**"
-text: "From your first line of code to your next ad campaign — everything a growing business needs to show up and sell online."
+text: "From your first line of code to your next ad campaign everything a growing business needs to show up and sell online."
 
 items:
   - icon: "fas fa-laptop-code"
@@ -32,4 +32,19 @@ items:
   - icon: "fa-brands fa-google"
     title: "Google Ads"
     text: "Search and shopping campaigns managed for return on ad spend, not just clicks."
+    link: "services"
+
+  - icon: "fas fa-paint-brush"
+    title: "Graphic Designing"
+    text: "Custom graphics, branding, and visual assets that make your business look professional and polished."
+    link: "services"
+
+  - icon: "fas fa-video"
+    title: "Video Editing"
+    text: "Professional video editing for social media, ads, and marketing campaigns that capture attention."
+    link: "services"
+
+  - icon: "fas fa-brain"
+    title: "Digital Strategy"
+    text: "Data-driven digital strategies that align with your business goals and drive measurable results."
     link: "services"

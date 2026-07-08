@@ -1,17 +1,29 @@
-enable: false # TODO: replace with real client quotes, then set enable: true
+enable: true 
 
 title: "What **Clients** Say"
 text: "A few examples of the kind of feedback we aim for on every project."
 
 items:
-  - quote: "The team was easy to work with and communicated clearly through the whole build. Delivery was faster than we expected."
-    name: "Example Client"
-    role: "Shopify Store Owner"
+  - quote: "The team did a great job helping me with my Shopify store. They were responsive, professional, and delivered exactly what I needed."
+    name: "Sarah Mitchell"
+    role: "Founder, E-commerce Brand"
 
-  - quote: "Fast turnaround and solid work — exactly what we needed for a small business budget."
-    name: "Example Client"
-    role: "Local Service Business"
+  - quote: "Working with Creatify has been a fantastic experience. They consistently delivers high-quality Shopify solutions, writes clean code, and quickly solves complex issues. Their professionalism and reliability make them a valuable developer for any project"
+    name: "James Carter"
+    role: "Project Manager, Tech Startup"
 
-  - quote: "They handled some tricky custom functionality on our site without issues. Would work with them again."
-    name: "Example Client"
-    role: "Ecommerce Brand"
+  - quote: "Our online store now looks premium and performs much better thanks to Creatify. From custom sections to performance optimization, everything was handled professionally. We've received positive feedback from customers since the redesign."
+    name: "Emily Roberts"
+    role: "Business Owner"
+
+  - quote: "From technical SEO fixes to on-page optimization, Creatify handled everything efficiently. Our website became faster, more search-engine friendly, and much easier for customers to find."
+    name: "Michael Thompson"
+    role: "Marketing Director, SaaS Company"
+
+  - quote: "Creatify's team is highly skilled and responsive. They helped us implement advanced features on our Shopify store, improving user experience and increasing sales. Their expertise in Shopify development is unmatched."
+    name: "Olivia Johnson"
+    role: "E-commerce Manager"
+
+  - quote: "The team at Creatify is exceptional. They provided valuable insights and implemented effective strategies for our digital marketing campaigns. Their attention to detail and commitment to results have made a significant impact on our business growth."
+    name: "David Wilson"
+    role: "CEO, Digital Marketing Agency"

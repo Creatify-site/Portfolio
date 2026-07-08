@@ -17,3 +17,21 @@ items:
 
   - name: "JavaScript"
     icon: "fa-brands fa-square-js"
+  
+  - name: "React"
+    icon: "fa-brands fa-react"
+
+  - name: "Node.js"
+    icon: "fa-brands fa-node-js"
+
+  - name: "Python"
+    icon: "fa-brands fa-python"
+
+  - name: "Figma"
+    icon: "fa-brands fa-figma"
+
+  - name: "Adobe Creative Suite"
+    icon: "fa-brands fa-adobe"
+
+  - name: "GitHub"
+    icon: "fa-brands fa-github"

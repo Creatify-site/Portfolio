@@ -10,7 +10,7 @@ items:
     pretext: "Always on time"
     title: "**Fast, Reliable** Delivery"
     text: "We prioritize clear communication and quick turnarounds, so you always know where your project stands — and it lands exactly when we said it would."
-    image: "images/home/features/features-1.png"
+    image: "images/home/features/feature-1.webp"
 
   - icon: "fas fa-code"
     color: "#00A8E8"
@@ -18,7 +18,7 @@ items:
     pretext: "Senior talent only"
     title: "**Senior-Level** Design & Development"
     text: "Every project is handled by experienced designers and developers, not junior hand-offs — so the details that make a site feel premium actually get the attention they need."
-    image: "images/home/features/features-2.png"
+    image: "images/home/features/feature-2.webp"
 
   - icon: "fas fa-chart-line"
     color: "#023E73"
@@ -26,4 +26,5 @@ items:
     pretext: "Built to perform"
     title: "**Results-Driven** Quality"
     text: "We hold every build to the same bar: fast load times, clean code, and measurable outcomes — because a beautiful site that doesn't convert isn't doing its job."
-    image: "images/home/features/features-3.png"
+    image: "images/home/features/feature-3.webp"
+  
