@@ -1,17 +1,19 @@
 enable: true
 
-title: "You will be in good company"
+title: "Platforms & Tools We Work With"
 
 items:
-  - name: "Beneoshop"
-    image: "images/home/clients/beneoshop.png"
+  - name: "Shopify"
+    icon: "fa-brands fa-shopify"
 
-  - name: "Caspio"
-    image: "images/home/clients/caspio.png"
+  - name: "WordPress"
+    icon: "fa-brands fa-wordpress"
 
-  - name: "Hypergrid"
-    image: "images/home/clients/hypergrid.png"
+  - name: "Google Ads"
+    icon: "fa-brands fa-google"
 
-  - name: "Leo Trippi"
-    image: "images/home/clients/leo-trippi.png"
+  - name: "Facebook Ads"
+    icon: "fa-brands fa-facebook"
 
+  - name: "JavaScript"
+    icon: "fa-brands fa-square-js"

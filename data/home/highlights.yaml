@@ -1,14 +1,14 @@
 enable: true
 
 items:
-  - title: "Lorem ipsum is simply dummy text"
-    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+  - title: "Have a project in mind?"
+    text: "Tell us what you're building and we'll get back to you with a straightforward quote — no lengthy sales calls required."
     button:
-      label: "View More"
-      link: "#"
+      label: "Get a Free Quote"
+      link: "contact"
 
-  - title: "Lorem ipsum is simply dummy text"
-    text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. "
+  - title: "Not sure where to start?"
+    text: "Take a look at what we do — web development, Shopify, WordPress, SEO, and paid ads — and see what fits your business."
     button:
-      label: "View More"
-      link: "#"
+      label: "View Our Services"
+      link: "services"

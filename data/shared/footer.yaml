@@ -3,11 +3,11 @@ enable: true
 contact:
   title: "Contact"
   items:
-    - label: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
-      link: ""
+    - label: "Support.creatify@gmail.com"
+      link: "mailto:Support.creatify@gmail.com"
 
     - label: "+92-3166710837"
-      link: "contact"
+      link: "tel:+923166710837"
 
 social:
   - title: "Facebook"

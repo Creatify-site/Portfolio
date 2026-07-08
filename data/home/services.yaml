@@ -1,0 +1,35 @@
+enable: true
+
+title: "Our Core **Expertise**"
+text: "From your first line of code to your next ad campaign — everything a growing business needs to show up and sell online."
+
+items:
+  - icon: "fas fa-laptop-code"
+    title: "Web Development"
+    text: "Fast, responsive websites built to convert visitors into customers, not just look good."
+    link: "services"
+
+  - icon: "fa-brands fa-shopify"
+    title: "Shopify Development"
+    text: "Custom Shopify storefronts, theme customization, and app integrations for ecommerce brands."
+    link: "services"
+
+  - icon: "fa-brands fa-wordpress"
+    title: "WordPress Development"
+    text: "Custom themes, plugin development, and WordPress builds that are easy for your team to manage."
+    link: "services"
+
+  - icon: "fas fa-magnifying-glass-chart"
+    title: "Search Engine Optimization"
+    text: "Technical SEO, content strategy, and on-page optimization that grows your organic traffic over time."
+    link: "services"
+
+  - icon: "fa-brands fa-facebook"
+    title: "Facebook Marketing"
+    text: "Targeted Facebook & Instagram ad campaigns built around real audience data, not guesswork."
+    link: "services"
+
+  - icon: "fa-brands fa-google"
+    title: "Google Ads"
+    text: "Search and shopping campaigns managed for return on ad spend, not just clicks."
+    link: "services"

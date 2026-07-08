@@ -1,0 +1,17 @@
+enable: false # TODO: replace with real client quotes, then set enable: true
+
+title: "What **Clients** Say"
+text: "A few examples of the kind of feedback we aim for on every project."
+
+items:
+  - quote: "The team was easy to work with and communicated clearly through the whole build. Delivery was faster than we expected."
+    name: "Example Client"
+    role: "Shopify Store Owner"
+
+  - quote: "Fast turnaround and solid work — exactly what we needed for a small business budget."
+    name: "Example Client"
+    role: "Local Service Business"
+
+  - quote: "They handled some tricky custom functionality on our site without issues. Would work with them again."
+    name: "Example Client"
+    role: "Ecommerce Brand"

@@ -1,7 +1,7 @@
-enable: true
+enable: false # TODO: wire up a real email service (Formspree/Mailchimp/etc.) before enabling — form currently has no working action
 
-title: "Lorem Ipsum is simply dummy text of the printing"
-method: ""
+title: "Get Digital Marketing Tips In Your Inbox"
+method: "POST"
 action: ""
-placeholder: ""
-label: ""
+placeholder: "you@company.com"
+label: "SUBSCRIBE"

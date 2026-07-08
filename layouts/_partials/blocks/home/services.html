@@ -1,0 +1,23 @@
+<section id="services" class="services relative py-8 xl:py-24">
+  <div class="container mx-auto px-4">
+    {{ with .title }}
+      <h1 class="markdown-title xl:max-w-2/3 mx-auto text-center text-[#252525] font-semibold text-4xl leading-normal mb-4">{{ . | markdownify }}</h1>
+    {{ end }}
+    {{ with .text }}
+      <p class="xl:max-w-1/2 mx-auto text-center text-[#868686] mb-14">{{ . }}</p>
+    {{ end }}
+    {{ if .items }}
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+        {{ range .items }}
+          <a href="{{ .link | relURL }}" class="group flex flex-col gap-4 p-8 rounded-2xl border border-[#EAEAEA] hover:border-primary hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center justify-center text-2xl text-primary bg-primary/10 size-14 rounded-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+              <i class="{{ .icon }}"></i>
+            </div>
+            <h2 class="text-xl font-medium text-[#252525]">{{ .title }}</h2>
+            <p class="text-sm text-[#868686] leading-relaxed">{{ .text }}</p>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section id="testimonials" class="testimonials relative py-8 xl:py-24 bg-primary/5">
+  <div class="container mx-auto px-4">
+    {{ with .title }}
+      <h1 class="markdown-title xl:max-w-2/3 mx-auto text-center text-[#252525] font-semibold text-4xl leading-normal mb-4">{{ . | markdownify }}</h1>
+    {{ end }}
+    {{ with .text }}
+      <p class="xl:max-w-1/2 mx-auto text-center text-[#868686] mb-14">{{ . }}</p>
+    {{ end }}
+    {{ if .items }}
+      <div class="grid xl:grid-cols-3 gap-6">
+        {{ range .items }}
+          <div class="flex flex-col gap-6 p-8 rounded-2xl bg-white shadow-lg">
+            <i class="fas fa-quote-left text-primary/30 text-3xl"></i>
+            <p class="text-[#545454] leading-relaxed grow">{{ .quote }}</p>
+            <div class="flex flex-col">
+              <span class="font-medium text-[#252525]">{{ .name }}</span>
+              <span class="text-sm text-[#868686]">{{ .role }}</span>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

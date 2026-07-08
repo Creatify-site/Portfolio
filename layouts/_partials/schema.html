@@ -1,0 +1,32 @@
+{{- $sameAs := slice -}}
+{{- range site.Data.shared.footer.social -}}
+  {{- if ne .link "#" -}}
+    {{- $sameAs = $sameAs | append .link -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $services := slice "Web Development" "Shopify Development" "WordPress Development" "Search Engine Optimization" "Facebook Marketing" "Google Ads" -}}
+{{- $offers := slice -}}
+{{- range $services -}}
+  {{- $offers = $offers | append (dict "@type" "Offer" "itemOffered" (dict "@type" "Service" "name" .)) -}}
+{{- end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "ProfessionalService"
+  "name" site.Title
+  "url" site.BaseURL
+  "description" site.Params.description
+  "email" (index site.Params.contact 0)
+  "telephone" (index site.Params.contact 1)
+  "priceRange" "$$"
+  "areaServed" "Worldwide"
+  "sameAs" $sameAs
+  "makesOffer" $offers
+-}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+
+{{- if .IsHome }}
+  {{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.BaseURL -}}
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{- end }}
