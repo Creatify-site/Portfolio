@@ -2,7 +2,7 @@
 title: "How To Embed ANY Social Media Content in Shopify (800+ Platforms Supported)"
 draft: false
 date: 2026-06-30
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/embed-any-social-media.webp"
 description: "Learn how to embed any social media content in Shopify from 800+ platforms including Instagram, TikTok, YouTube, Facebook, Twitter (X), and more. This guide shows step-by-step methods to add embeds, improve engagement, and enhance your Shopify store with dynamic social proof content."
 categories:
   - Shopify

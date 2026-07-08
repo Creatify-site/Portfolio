@@ -2,7 +2,7 @@
 title: "How To Show Sale Discount Percentage on Shopify"
 draft: false
 date: 2026-06-29
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/Sale-discount.webp"
 description: "Learn how to display sale discount percentage on Shopify product pages using Liquid code. This guide helps you show dynamic discount badges (e.g. -20%) to improve user trust, boost conversions, and make your Shopify store look more professional and sales-focused."
 categories:
   - Shopify

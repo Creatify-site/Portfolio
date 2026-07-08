@@ -2,7 +2,7 @@
 title: "How To Give Shopify Store Access Safely"
 draft: false
 date: 2026-06-26
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/collaborative-access.webp"
 description: "Learn how to safely give Shopify store access using a collaborator request code. Step-by-step guide to inviting developers, agencies, or freelancers without sharing your password, managing permissions, and protecting your store security with Shopify’s Collaborator system."
 categories:
   - Shopify

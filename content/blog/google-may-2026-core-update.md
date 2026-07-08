@@ -2,7 +2,7 @@
 title: "Google May 2026 Core Update Explained: Key SEO Changes and Recovery Tips"
 draft: false
 date: 2026-06-23
-image: "images/home/features/feature-3.webp"
+image: "images/blog/seo/Google.webp"
 description: "The Google May 2026 Core Update introduced significant changes to search rankings, content evaluation, and user experience signals. In this guide, we break down the key SEO changes, analyze their impact on websites, and share practical recovery strategies to help businesses, publishers, and marketers maintain or improve their organic search performance"
 categories:
   - SEO

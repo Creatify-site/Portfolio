@@ -2,7 +2,7 @@
 title: "10 Web Development Trends"
 draft: false
 date: 2026-07-08
-image: "images/home/features/feature-2.webp"
+image: "images/blog/seo/Web-trend.webp"
 description: "Stay ahead in 2026 with the top 10 web development trends shaping the future of websites and apps. Explore modern technologies like AI-driven development, serverless architecture, WebAssembly, headless CMS, progressive web apps, and more to build faster, smarter, and scalable web experiences."
 categories:
   - HTML-5

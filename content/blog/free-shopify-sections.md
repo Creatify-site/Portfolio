@@ -2,7 +2,7 @@
 title: "Free Shopify Sections – (100+ All Free Sections)"
 draft: false
 date: 2026-07-07
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/Shopify-section.webp"
 description: "Discover 100+ free Shopify sections to enhance your online store without coding. Learn how to add custom sections, improve design, boost conversions, and create a professional shopping experience using the best free Shopify section libraries."
 categories:
   - Shopify

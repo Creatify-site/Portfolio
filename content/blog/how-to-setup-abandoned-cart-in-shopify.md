@@ -2,7 +2,7 @@
 title: "How To Setup Abandoned Cart In Shopify"
 draft: false
 date: 2026-06-25
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/abandoned-cart.webp"
 description: "Learn how to set up abandoned cart recovery in Shopify to increase sales and recover lost customers. Step-by-step guide to enable automated email reminders, customize recovery settings, and boost your store conversion rate with Shopify’s built-in marketing tools."
 categories:
   - Shopify

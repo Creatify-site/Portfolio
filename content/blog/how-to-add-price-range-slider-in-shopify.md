@@ -2,7 +2,7 @@
 title: "How To Add a Price Range Slider in Shopify (Free Code)"
 draft: false
 date: 2026-06-27
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/price-range-slider.webp"
 description: "Learn how to add a price range slider in Shopify using code without installing a paid app. Follow this step-by-step guide to create a custom product filter, improve user experience, and help customers find products within their budget on your Shopify store."
 categories:
   - Shopify

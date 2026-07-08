@@ -2,7 +2,7 @@
 title: "HTML5-Intro"
 draft: false
 date: 2026-07-01
-image: "images/home/features/feature-2.webp"
+image: "images/blog/html/HTML-5.webp"
 description: "Learn what HTML5 is and why it is the foundation of modern web development. Explore its new features, semantic elements, multimedia support, and how it improves website structure, performance, and SEO for today’s responsive web applications."
 categories:
   - HTML-5

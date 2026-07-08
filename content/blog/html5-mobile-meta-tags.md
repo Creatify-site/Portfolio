@@ -2,7 +2,7 @@
 title: "HTML5 Mobile Meta Tags"
 draft: false
 date: 2026-07-02
-image: "images/home/features/feature-2.webp"
+image: "images/blog/html/HTML-5-meta-tags.webp"
 description: "Learn about HTML5 mobile meta tags and how they optimize your website for mobile devices. Discover essential tags like viewport, theme color, and mobile-friendly settings that improve responsiveness, user experience, and SEO performance on smartphones and tablets."
 categories:
   - HTML-5

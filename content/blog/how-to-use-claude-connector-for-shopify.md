@@ -2,7 +2,7 @@
 title: "How To Use Claude Connector For Shopify"
 draft: false
 date: 2026-06-24
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/claude-connector.webp"
 description: "Learn how to use the Claude Connector for Shopify to connect your store with AI-powered assistance. Discover setup steps, key features, use cases, benefits, and best practices to improve store management, customer support, product discovery, and ecommerce operations with Claude AI."
 categories:
   - Shopify

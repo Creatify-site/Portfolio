@@ -2,7 +2,7 @@
 title: "How Build a No-Code Political Tweet Analyzer with N8N [Free Workflow]"
 draft: false
 date: 2026-06-22
-image: "images/home/features/feature-3.webp"
+image: "images/blog/html/no-code.webp"
 description: "A practical guide to building a no-code political tweet analyzer using n8n automation. This tutorial shows how to collect tweets, analyze sentiment, and track political trends without writing any code. Perfect for beginners who want to create powerful AI-driven workflows using free tools and automation."
 categories:
   - SEO

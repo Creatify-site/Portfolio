@@ -2,7 +2,7 @@
 title: "How To Add Custom Button To Product Page"
 draft: false
 date: 2026-07-04
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/custom-button.webp"
 description: "Learn how to add a custom button to Shopify product pages using Liquid, HTML, and CSS. This step-by-step guide helps you create buy buttons, WhatsApp buttons, add-to-cart custom buttons, and improve conversion rates with easy Shopify theme customization."
 categories:
   - Shopify
