@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-16">
+      <div class="mx-auto xl:max-w-1/2">
+        {{ with .Params.categories }}
+          <div class="text-center mb-4">
+            <span class="text-primary text-sm font-semibold uppercase tracking-wide">{{ index . 0 }}</span>
+          </div>
+        {{ end }}
+        {{ with .Title }}
+          <h1 class="markdown-title text-center text-4xl xl:text-5xl font-bold xl:leading-normal mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+        <div class="flex items-center justify-center gap-3 text-sm text-[#868686] mb-10">
+          <span>{{ .Params.Author | default "Creatify" }}</span>
+          <span>&middot;</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </div>
+        {{ with .Description }}
+          <p class="text-xl xl:leading-loose font-medium text-center text-[#777777]">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ with .Params.image }}
+      <div class="container mx-auto px-4 mb-16 xl:max-w-4xl">
+        {{ partial "utilities/image" (dict "src" . "alt" $.Title "class" "w-full aspect-video object-cover object-center rounded-2xl") }}
+      </div>
+    {{ end }}
+
+    <div class="container mx-auto px-4 mb-16">
+      <div class="prose-lg prose mx-auto">
+        {{ .Content }}
+      </div>
+    </div>
+
+    {{ if .Params.tags }}
+      <div class="container mx-auto px-4 mb-28">
+        <div class="flex flex-wrap items-center justify-center gap-2 xl:max-w-2xl mx-auto">
+          <span class="text-xs font-medium text-[#868686] mr-1">Tagged:</span>
+          {{ range first 6 .Params.tags }}
+            <a class="text-xs text-[#868686] bg-[#F4F4F4] hover:bg-primary/10 hover:text-primary transition-colors duration-300 rounded-full px-3 py-1" href="{{ printf "%s/tags/%s" site.BaseURL . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
