@@ -16,7 +16,7 @@ npm install
 hugo server
 ```
 
-The site will be running at `http://localhost:1313`.
+The site will be running at `https://www.creatify.site/`.
 
 If you already cloned without `--recurse-submodules`, fetch the theme with:
 

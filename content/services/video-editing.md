@@ -1,6 +1,6 @@
 ---
 title: "Video Editing"
-description: "Professional video editing for social media, ads, and marketing campaigns that capture attention — from raw footage to a finished, on-brand video."
+description: "Professional video editing for social media, ads, and marketing campaigns that capture attention from raw footage to a finished, on-brand video."
 icon: "fas fa-video"
 kicker: "Service"
 ---

@@ -2,7 +2,7 @@
 title: "What Is SEO and How Does It Work?"
 draft: false
 date: 2026-06-20
-image: "images/home/features/feature-3.webp"
+image: "images/blog/seo/SEO.webp"
 description: "Learn what SEO (Search Engine Optimization) is, how search engines work, and the strategies used to improve website rankings on Google. This complete guide by Muhammad Ali Sajid covers on-page SEO, technical SEO, keyword research, link building, and practical tips to help businesses and websites attract more organic traffic and grow their online presence."
 categories:
   - SEO

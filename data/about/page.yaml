@@ -1,9 +1,9 @@
 kicker: "About Creatify"
 title: "The Story Behind **Creatify**"
-intro: "Creatify is a digital media agency built for small and mid-sized businesses that want senior-level web, Shopify, WordPress, and marketing work — without the overhead of a big agency retainer. We handle the build, the storefront, and the campaigns, so business owners can focus on running the business."
+intro: "Creatify is a digital media agency built for small and mid-sized businesses that want senior-level web, Shopify, WordPress, and marketing work without the overhead of a big agency retainer. We handle the build, the storefront, and the campaigns, so business owners can focus on running the business."
 
 mission: "Our mission is to give small and mid-sized businesses the same quality of digital work larger brands pay agency-of-record rates for, without the overhead."
-vision: "We want to be the team a growing business calls first — for a new website, a Shopify store, or a marketing campaign — because they know it'll get done right, on time, and without the back-and-forth."
+vision: "We want to be the team a growing business calls first; for a new website, a Shopify store, or a marketing campaign because they know it'll get done right, on time, and without the back-and-forth."
 
 values:
   - icon: "fas fa-bolt"
@@ -16,7 +16,7 @@ values:
 
   - icon: "fas fa-chart-line"
     title: "Built to Perform"
-    text: "Fast, clean, and measured against real outcomes — not just how it looks in a screenshot."
+    text: "Fast, clean, and measured against real outcomes not just how it looks in a screenshot."
 
   - icon: "fas fa-hand-holding-dollar"
     title: "Fair, Transparent Pricing"
@@ -25,8 +25,8 @@ values:
 team:
   - name: "Muhammad Talha"
     role: "Founder"
-    image: ""
-    bio: "Muhammad Talha founded Creatify with a simple goal: give growing businesses access to senior-level digital work without enterprise-agency overhead. He leads strategy and client relationships, making sure every project ties back to a real business outcome, not just a deliverable."
+    image: "images/about/talha.webp"
+    bio: "Muhammad Talha founded Creatify with a simple goal: give growing businesses access to senior-level digital work without enterprise-agency overhead. A results-driven digital marketing expert with extensive experience in helping brands grow across today's leading digital platforms. Specializing in Google Ads, Meta (Facebook & Instagram) Ads, TikTok Ads, SEO, social media marketing, conversion optimization, and performance marketing, he has helped businesses increase their online visibility, generate qualified leads, and maximize return on investment. He leads strategy and client relationships, making sure every project ties back to a real business outcome, not just a deliverable."
 
   - name: "Muhammad Ali Sajid"
     role: "Co-Founder"

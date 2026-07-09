@@ -2,7 +2,7 @@
 title: "Story Timeline In Shopify(Without app- Free)"
 draft: false
 date: 2026-07-03
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/time-line-section.webp"
 description: "Learn how to create an interactive Story Timeline in Shopify using custom Liquid, HTML, CSS, and JavaScript. Display brand history, product journeys, milestones, achievements, or step-by-step processes in a visually engaging timeline section that enhances user experience and storytelling."
 categories:
   - Shopify

@@ -2,7 +2,7 @@
 title: "Why SEO Matters in Today’s World"
 draft: false
 date: 2026-06-21
-image: "images/home/features/feature-3.webp"
+image: "images/blog/seo/SEO-MATTER.webp"
 description: "SEO matters in today’s digital world because it helps websites rank higher on search engines, attract organic traffic, and build long-term online visibility. In this blog, explore why SEO is essential for businesses, how it improves brand awareness, and why it remains the most powerful digital marketing strategy in 2026."
 categories:
   - SEO

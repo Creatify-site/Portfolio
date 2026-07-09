@@ -2,7 +2,7 @@
 title: "Shopify Spring 2026 Edition: The Only Updates That Matter"
 draft: false
 date: 2026-07-06
-image: "images/home/features/feature-1.webp"
+image: "images/blog/shopify/Shopify-update.webp"
 description: "Discover the most important Shopify Spring 2026 Edition updates that actually matter. Learn about new AI features, checkout improvements, developer tools, design enhancements, and eCommerce innovations that can help Shopify merchants grow faster and sell smarter."
 categories:
   - Shopify

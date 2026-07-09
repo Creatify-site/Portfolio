@@ -2,7 +2,7 @@
 title: "Shopify SEO Tips for Beginners: How to Rank Your Store Higher on Google"
 draft: false
 date: 2026-07-05
-image: "images/home/features/feature-3.webp"
+image: "images/blog/shopify/Shopify-seo.webp"
 description: "Learn essential Shopify SEO tips for beginners and discover how to optimize your store for higher Google rankings. This step-by-step tutorial covers keyword research, product page optimization, technical SEO, site speed, and proven strategies to increase organic traffic and sales."
 categories:
   - SEO

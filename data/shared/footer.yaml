@@ -9,13 +9,20 @@ contact:
     - label: "+92-3166710837"
       link: "tel:+923166710837"
 
+    - label: "+92-3003626704"
+      link: "tel:+923003626704"
+
+    - label: "Multan, Pakistan"
+      link: "https://goo.gl/maps/qCS1TgeUjG4hcpjTA"
+
+
 social:
   - title: "Instagram"
     icon: "fa-brands fa-instagram"
     link: "https://www.instagram.com/creatify.site"
   - title: "LinkedIn"
     icon: "fa-brands fa-linkedin"
-    link: "https://www.linkedin.com/company/creatify-site"
+    link: "https://www.linkedin.com/in/creatify-site/"
   - title: "GitHub"
     icon: "fa-brands fa-github"
     link: "https://github.com/creatify-site"

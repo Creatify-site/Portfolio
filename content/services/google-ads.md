@@ -5,9 +5,9 @@ icon: "fa-brands fa-google"
 kicker: "Service"
 ---
 
-Google Ads can put you in front of people actively searching for what you sell — but only if the campaign structure, keyword targeting, and conversion tracking are set up correctly. A lot of accounts we've reviewed are quietly burning budget on broad match keywords with no real tracking in place.
+Google Ads can put you in front of people actively searching for what you sell but only if the campaign structure, keyword targeting, and conversion tracking are set up correctly. A lot of accounts we've reviewed are quietly burning budget on broad match keywords with no real tracking in place.
 
-We build campaigns around actual business outcomes: sales, leads, or bookings — not just click-through rate.
+We build campaigns around actual business outcomes: sales, leads, or bookings not just click-through rate.
 
 ## What's Included
 
