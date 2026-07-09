@@ -1,5 +1,6 @@
 theme: "hugo-agency-web"
 languageCode: "en-us"
+enableRobotsTXT: true
 
 build:
   buildStats:

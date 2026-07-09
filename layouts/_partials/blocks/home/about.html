@@ -6,7 +6,7 @@
           <span class="text-primary font-semibold uppercase tracking-wide text-sm text-center xl:text-start">{{ . }}</span>
         {{ end }}
         {{ with .title }}
-          <h1 class="markdown-title text-center xl:text-start text-3xl xl:text-4xl font-semibold leading-normal">{{ . | markdownify }}</h1>
+          <h2 class="markdown-title text-center xl:text-start text-3xl xl:text-4xl font-semibold leading-normal">{{ . | markdownify }}</h2>
         {{ end }}
         {{ with .text }}
           <p class="text-center xl:text-start text-[#5C5C5C] leading-relaxed">{{ . }}</p>

@@ -9,9 +9,10 @@
       </div>
     </div>
 
-    {{ if .Pages }}
+    {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+    {{ if $paginator.Pages }}
       <div class="container mx-auto px-4 grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-16 mb-28">
-        {{ range .Pages.ByDate.Reverse }}
+        {{ range $paginator.Pages }}
           <a href="{{ .Permalink }}" class="group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300">
             <div class="aspect-video overflow-hidden">
               {{ with .Params.image }}

@@ -13,10 +13,13 @@ contact:
       link: "tel:+923003626704"
 
     - label: "Multan, Pakistan"
-      link: "https://goo.gl/maps/qCS1TgeUjG4hcpjTA"
+      link: "https://www.google.com/maps/search/?api=1&query=30.217500,71.438700"
 
 
 social:
+  - title: "Facebook"
+    icon: "fa-brands fa-facebook"
+    link: "https://www.facebook.com/creatify"
   - title: "Instagram"
     icon: "fa-brands fa-instagram"
     link: "https://www.instagram.com/creatify.site"

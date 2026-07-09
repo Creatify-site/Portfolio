@@ -13,7 +13,7 @@
       <div class="grid xl:grid-cols-5 gap-12 xl:max-w-4xl mx-auto">
         <form
           class="xl:col-span-3 flex flex-col gap-5"
-          action="mailto:{{ index site.Params.contact 0 }}"
+          action="{{ printf "mailto:%s" (index site.Params.contact 0) | safeURL }}"
           method="post"
           enctype="text/plain"
         >
@@ -38,11 +38,11 @@
         <div class="xl:col-span-2 flex flex-col gap-8 p-8 rounded-2xl bg-[#F4F4F4] h-fit">
           <div>
             <h2 class="text-lg font-medium text-[#252525] mb-2">Email</h2>
-            <a class="text-primary hover:underline" href="mailto:{{ index site.Params.contact 0 }}">{{ index site.Params.contact 0 }}</a>
+            <a class="text-primary hover:underline" href="{{ printf "mailto:%s" (index site.Params.contact 0) | safeURL }}">{{ index site.Params.contact 0 }}</a>
           </div>
           <div>
             <h2 class="text-lg font-medium text-[#252525] mb-2">Phone</h2>
-            <a class="text-primary hover:underline" href="tel:{{ index site.Params.contact 1 }}">{{ index site.Params.contact 1 }}</a>
+            <a class="text-primary hover:underline" href="{{ printf "tel:%s" (index site.Params.contact 1) | safeURL }}">{{ index site.Params.contact 1 }}</a>
           </div>
           <div>
             <h2 class="text-lg font-medium text-[#252525] mb-4">Follow Us</h2>

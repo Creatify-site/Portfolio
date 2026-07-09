@@ -24,8 +24,10 @@
       {{ end }}
     </div>
 
-    {{ $pages := .RegularPages }}
-    {{ if $pages }}
+    {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+    {{ $pages := $paginator.Pages }}
+
+    {{ if and (eq $paginator.PageNumber 1) $pages }}
       {{ $post := index $pages 0 }}
       <div class="container mx-auto px-4 grid xl:grid-cols-2 gap-16 mb-28">
         <a class="block bg-primary/10 h-full w-full aspect-video rounded-2xl overflow-hidden" href="{{ $post.Permalink }}">
@@ -45,26 +47,30 @@
           </div>
         </div>
       </div>
+    {{ end }}
 
+    {{ if $pages }}
       <div class="container mx-auto px-4 grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-16 mb-28">
-        {{ range after 1 $pages }}
-          <a href="{{ .Permalink }}" class="group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300">
-            <div class="aspect-video overflow-hidden">
-              {{ with .Params.image }}
-                {{ partial "utilities/image" (dict "src" . "alt" $.Title "class" "w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500") }}
-              {{ else }}
-                <div class="w-full h-full bg-primary/10"></div>
-              {{ end }}
-            </div>
-            <div class="flex flex-col gap-2 p-6">
-              {{ with (index .Params.categories 0) }}
-                <span class="text-primary text-xs font-semibold uppercase tracking-wide">{{ . }}</span>
-              {{ end }}
-              <h2 class="text-lg font-medium text-[#252525] leading-snug">{{ .Title }}</h2>
-              <div class="text-sm text-[#868686] leading-relaxed line-clamp-3">{{ or .Description .Summary }}</div>
-              <time class="text-xs text-[#868686] mt-2">{{ .Date.Format "Jan 2, 2006" }}</time>
-            </div>
-          </a>
+        {{ range $i, $p := $pages }}
+          {{ if not (and (eq $paginator.PageNumber 1) (eq $i 0)) }}
+            <a href="{{ $p.Permalink }}" class="group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300">
+              <div class="aspect-video overflow-hidden">
+                {{ with $p.Params.image }}
+                  {{ partial "utilities/image" (dict "src" . "alt" $p.Title "class" "w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500") }}
+                {{ else }}
+                  <div class="w-full h-full bg-primary/10"></div>
+                {{ end }}
+              </div>
+              <div class="flex flex-col gap-2 p-6">
+                {{ with (index $p.Params.categories 0) }}
+                  <span class="text-primary text-xs font-semibold uppercase tracking-wide">{{ . }}</span>
+                {{ end }}
+                <h2 class="text-lg font-medium text-[#252525] leading-snug">{{ $p.Title }}</h2>
+                <div class="text-sm text-[#868686] leading-relaxed line-clamp-3">{{ or $p.Description $p.Summary }}</div>
+                <time class="text-xs text-[#868686] mt-2">{{ $p.Date.Format "Jan 2, 2006" }}</time>
+              </div>
+            </a>
+          {{ end }}
         {{ end }}
       </div>
     {{ end }}

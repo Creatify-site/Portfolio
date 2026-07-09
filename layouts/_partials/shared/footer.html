@@ -3,11 +3,11 @@
 <footer class="pt-20 pb-8">
   <div class="container mx-auto px-4 grid xl:grid-cols-12 gap-16">
     <div class="xl:col-span-4">
-      <h1 class="text-primary font-bold uppercase mb-6 text-center xl:text-start">{{ site.Title }}</h1>
+      <p class="text-primary font-bold uppercase mb-6 text-center xl:text-start">{{ site.Title }}</p>
       <p class=" text-center xl:text-start">{{ site.Params.description }}</p>
     </div>
     <div class="xl:col-span-2">
-      <h1 class="font-medium mb-6 text-center xl:text-start">About Us</h1>
+      <p class="font-medium mb-6 text-center xl:text-start">About Us</p>
       <ul class="">
         {{ range site.Menus.footer }}
           <li class="mb-2 text-center xl:text-start"><a class="text-[#515151] hover:text-primary transition-colors duration-300" href="{{ .URL }}">{{ .Name }}</a></li>
@@ -15,10 +15,10 @@
       </ul>
     </div>
     <div class="xl:col-span-3">
-      <h1 class="font-medium mb-6 text-center xl:text-start">{{ site.Data.shared.footer.contact.title }}</h1>
+      <p class="font-medium mb-6 text-center xl:text-start">{{ site.Data.shared.footer.contact.title }}</p>
       <ul class="">
         {{ range site.Data.shared.footer.contact.items }}
-          <li class="mb-2 text-center xl:text-start"><a class="text-[#515151] hover:text-primary transition-colors duration-300" href="{{ .link }}">{{ .label }}</a></li>
+          <li class="mb-2 text-center xl:text-start"><a class="text-[#515151] hover:text-primary transition-colors duration-300" href="{{ .link | safeURL }}">{{ .label }}</a></li>
         {{ end }}
       </ul>
     </div>

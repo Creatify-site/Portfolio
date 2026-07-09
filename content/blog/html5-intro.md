@@ -41,11 +41,9 @@ keywords:
 Author: Creatify
 ---
 
-While [HTML5](https://html5up.net/) is a language that has been developing **for more than Eight years** , its application in real systems and popularization came after his triumph over XHTML2 to become the new standard markup language for web development.
+[HTML5](https://html5up.net/) has long since become the standard markup language for web development, and it's the foundation nearly every modern site is still built on today. Despite that, plenty of developers never fully learn its properties beyond the basics — this article covers the key features worth knowing to build a solid foundation.
 
-Because of their relatively recent entry into the world of development, there are few who know exact science full properties of this new language. That is why in this article we have decided to list the key features of this markup in order to lay the groundwork necessary for proper development.
-
-Several new elements included this language, which today are compatible with all popular browsers in their latest versions. Firefox, Chrome, Safari and Opera have supported this language for some time, while Internet Explorer gave support since September 2010 with the beta version of IE9.
+Several elements introduced in this language are now supported natively across every major browser — Chrome, Firefox, Safari, and Edge — with no plugins or workarounds required.
 
 ## HTML 5 and multimedia content
 
