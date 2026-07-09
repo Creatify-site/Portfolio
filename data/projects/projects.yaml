@@ -1,0 +1,187 @@
+intro: "26 Shopify stores + 4 Finance & Analytics projects — Shopify Liquid, Excel, Power BI."
+
+shopify:
+  - name: "Meow Meow Tweet"
+    category: "Skin Care"
+    slug: "skin-care"
+    url: "https://meowmeowtweet.com/"
+    image: "/projects/meow-meow-tweet.webp"
+
+  - name: "Briogeo"
+    category: "Hair Care"
+    slug: "hair-care"
+    url: "https://www.briogeohair.com/"
+    image: "/projects/briogeo.webp"
+
+  - name: "Magic Mind"
+    category: "Supplement"
+    slug: "supplement"
+    url: "https://magicmind.com/"
+    image: "/projects/magic-mind.webp"
+
+  - name: "Chamberlain Coffee"
+    category: "Coffee"
+    slug: "coffee"
+    url: "https://chamberlaincoffee.com/"
+    image: "/projects/chamberlain-coffee.webp"
+
+  - name: "Snif"
+    category: "Fragrance"
+    slug: "fragrance"
+    url: "https://snif.co/"
+    image: "/projects/snif.webp"
+
+  - name: "Kate & Kole"
+    category: "Jewelry"
+    slug: "jewelry"
+    url: "https://www.kateandkole.com.au/"
+    image: "/projects/kate-and-kole.webp"
+
+  - name: "Wild One"
+    category: "Pet"
+    slug: "pet"
+    url: "https://wildone.com/"
+    image: "/projects/wild-one.webp"
+
+  - name: "Maje"
+    category: "Cloth"
+    slug: "cloth"
+    url: "https://www.maje.ae/"
+    image: "/projects/maje.webp"
+
+  - name: "Sunday Citizen"
+    category: "Home Decor"
+    slug: "home-decor"
+    url: "https://sundaycitizen.co/"
+    image: "/projects/sunday-citizen.webp"
+
+  - name: "Our Place"
+    category: "Kitchen"
+    slug: "kitchen"
+    url: "https://fromourplace.com/"
+    image: "/projects/our-place.webp"
+
+  - name: "Negative Underwear"
+    category: "Apparel"
+    slug: "apparel"
+    url: "https://negativeunderwear.com/"
+    image: "/projects/negative-underwear.webp"
+
+  - name: "Lalo"
+    category: "Baby"
+    slug: "baby"
+    url: "https://www.meetlalo.com/"
+    image: "/projects/lalo.webp"
+
+  - name: "Parks Project"
+    category: "Outdoor"
+    slug: "outdoor"
+    url: "https://www.parksproject.us/"
+    image: "/projects/parks-project.webp"
+
+  - name: "Bellroy"
+    category: "Bags"
+    slug: "bags"
+    url: "https://bellroy.com/"
+    image: "/projects/bellroy.webp"
+
+  - name: "Native Union"
+    category: "Tech"
+    slug: "tech"
+    url: "https://www.nativeunion.com/"
+    image: "/projects/native-union.webp"
+
+  - name: "Kotn"
+    category: "Fashion"
+    slug: "fashion"
+    url: "https://kotn.com/"
+    image: "/projects/kotn.webp"
+
+  - name: "Allbirds"
+    category: "Footwear"
+    slug: "footwear"
+    url: "https://www.allbirds.com/"
+    image: "/projects/allbirds.webp"
+
+  - name: "Gharyal"
+    category: "Watch"
+    slug: "watch"
+    url: "https://gharyal.com/"
+    image: "/projects/gharyal.webp"
+
+  - name: "Nureh"
+    category: "Cloth"
+    slug: "cloth"
+    url: "https://nureh.pk/"
+    image: "/projects/nureh.webp"
+
+  - name: "Manto"
+    category: "Streetwear"
+    slug: "streetwear"
+    url: "https://www.shopmanto.com/"
+    image: "/projects/manto.webp"
+
+  - name: "Conatural"
+    category: "Skin Care"
+    slug: "skin-care"
+    url: "https://conaturalintl.com/"
+    image: "/projects/conatural.webp"
+
+  - name: "Optic World"
+    category: "Eyewear"
+    slug: "eyewear"
+    url: "https://opticworld.pk/"
+    image: "/projects/optic-world.webp"
+
+  - name: "Iron Gear"
+    category: "Sportswear"
+    slug: "sportwear"
+    url: "https://theirongear.com/"
+    image: "/projects/iron-gear.webp"
+
+  - name: "Raaz"
+    category: "Coffee"
+    slug: "coffee"
+    url: "https://raazlife.com/"
+    image: "/projects/raaz.webp"
+
+  - name: "Vessi"
+    category: "Footwear"
+    slug: "footwear"
+    url: "https://ca.vessi.com/"
+    image: "/projects/vessi.webp"
+
+  - name: "Rhode Skin"
+    category: "Skin Care"
+    slug: "skin-care"
+    url: "https://www.rhodeskin.com/"
+    image: "/projects/rhode.webp"
+
+finance:
+  - name: "Finance KPIs Dashboard"
+    description: "Real-time Power BI + Excel dashboard tracking revenue, expenses, profit margins, cash flow, and growth trends for business decision-making."
+    tools: ["Power BI", "Excel", "DAX"]
+    url: "https://github.com/alibhatti23/Finance_KPIs_Dashboard"
+    gradient: "linear-gradient(135deg, #023E73 0%, #0077B6 100%)"
+    icon: "fas fa-chart-column"
+
+  - name: "Budget & Forecasting Model"
+    description: "Excel-based financial planning system with scenario analysis, budgeting, and revenue forecasting — built for real business use."
+    tools: ["Excel", "Scenario Analysis", "Forecasting"]
+    url: "https://github.com/alibhatti23/Budget-Forcasting-Model"
+    gradient: "linear-gradient(135deg, #1a5c3a 0%, #2d9e6b 100%)"
+    icon: "fas fa-arrow-trend-up"
+
+  - name: "Sales Performance Analytics"
+    description: "Visualizes business metrics including revenue, profit, expenses, sales trends, and top-performing products across time periods."
+    tools: ["Power BI", "Excel", "Sales Analytics"]
+    url: "https://github.com/alibhatti23/Sales-Performance-Analytics-Dashboard"
+    gradient: "linear-gradient(135deg, #4a1c6b 0%, #8b38c2 100%)"
+    icon: "fas fa-clock"
+
+  - name: "Small Business Bookkeeping System"
+    description: "Structured bookkeeping system for tracking income, expenses, cash flow, and P&L statements — designed for small business owners."
+    tools: ["Excel", "Bookkeeping", "P&L"]
+    url: "https://github.com/alibhatti23/Business-Bookkeeping-System"
+    gradient: "linear-gradient(135deg, #7a3500 0%, #d4620a 100%)"
+    icon: "fas fa-file-invoice-dollar"
