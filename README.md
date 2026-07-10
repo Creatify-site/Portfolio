@@ -1,13 +1,15 @@
 # Creatify — Agency Portfolio
 
-Creatify's agency portfolio site, built with [Hugo](https://gohugo.io/) and the [hugo-agency-web](https://github.com/writeonlycode/hugo-agency-web) theme (Tailwind CSS v4). Live at [creatify.site](https://www.creatify.site/).
+Creatify's agency portfolio site, built with [Hugo](https://gohugo.io/) and the [hugo-agency-web](https://github.com/writeonlycode/hugo-agency-web) theme (Tailwind CSS v4).
+
+**Live site:** [https://www.creatify.site/](https://www.creatify.site/)
 
 ## Prerequisites
 
 - [Hugo (extended)](https://gohugo.io/installation/) v0.147.8+ (developed against v0.163.2)
 - [Node.js](https://nodejs.org/) + npm
 
-## Getting Started
+## Getting Started (Local Development)
 
 ```bash
 git clone --recurse-submodules https://github.com/Creatify-site/Portfolio.git
@@ -16,7 +18,7 @@ npm install
 hugo server
 ```
 
-The site will be running at `http://localhost:1313`.
+This starts a local preview at `http://localhost:1313` for development only — it's a copy of the site running on your machine, separate from the live production site at [www.creatify.site](https://www.creatify.site/). Changes here aren't visible to the public until committed and pushed to `main`, which triggers a Vercel deploy (see **Deployment** below).
 
 If you already cloned without `--recurse-submodules`, fetch the theme with:
 
