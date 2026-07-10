@@ -1,17 +1,34 @@
 <section id="clients" class="clients relative py-16 xl:py-24 overflow-hidden">
   <div class="container mx-auto px-4">
     <h2 class="text-2xl font-medium leading-relaxed text-center xl:max-w-1/2 mx-auto mb-16">{{ .title }}</h2>
-    <div class="flex flex-col xl:flex-row items-center justify-around flex-wrap gap-10">
+    <div class="platforms-strip flex flex-row flex-nowrap overflow-x-auto snap-x snap-mandatory gap-8 pb-4 -mx-4 px-4 xl:flex-wrap xl:overflow-visible xl:justify-around xl:items-center xl:gap-10 xl:pb-0 xl:mx-0 xl:px-0">
       {{ range .items }}
         {{ if .icon }}
-          <div class="flex flex-col items-center gap-2 text-[#868686] hover:text-primary transition-colors duration-300" title="{{ .name }}">
+          <div class="flex flex-col items-center gap-2 shrink-0 snap-center min-w-24 text-[#868686] hover:text-primary transition-colors duration-300 xl:shrink xl:min-w-0" title="{{ .name }}">
             <i class="{{ .icon }} text-4xl"></i>
-            <span class="text-sm font-medium">{{ .name }}</span>
+            <span class="text-sm font-medium whitespace-nowrap">{{ .name }}</span>
           </div>
         {{ else }}
-          {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "h-16 w-auto")}}
+          {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "h-16 w-auto shrink-0 snap-center")}}
         {{ end }}
       {{ end }}
     </div>
   </div>
 </section>
+
+<style>
+  .platforms-strip {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent;
+  }
+  .platforms-strip::-webkit-scrollbar {
+    height: 4px;
+  }
+  .platforms-strip::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 999px;
+  }
+  .platforms-strip::-webkit-scrollbar-track {
+    background: transparent;
+  }
+</style>

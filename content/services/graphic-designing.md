@@ -38,7 +38,7 @@ Vector source files (AI/SVG), high-res exports (PNG with transparency, JPG), fav
 Yes — editable Canva or Figma templates for social posts, stories, and offers, built on your brand system so everything your team produces stays consistent without a designer in the loop.
 
 **Do you design ad creative that actually converts?**
-That's the main event. Since we also [run Meta](/services/facebook-marketing) and [Google](/services/google-ads) campaigns, our ad creative is designed around what performs — clear hook, readable at thumbnail size, single call-to-action — not just what looks good in a portfolio.
+That's the main event. Since we also [run the ad campaigns](/services/social-media-marketing) ourselves, our ad creative is designed around what performs: clear hook, readable at thumbnail size, single call to action. Not just what looks good in a portfolio.
 
 **What about print?**
 Yes — business cards, brochures, packaging, signage. Print-ready files with correct bleed, CMYK color, and resolution, coordinated with your printer's specs.

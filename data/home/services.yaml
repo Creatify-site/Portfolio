@@ -24,15 +24,10 @@ items:
     text: "Technical SEO, content strategy, and on-page optimization that grows your organic traffic over time."
     link: "/services/seo"
 
-  - icon: "fa-brands fa-facebook"
-    title: "Facebook Marketing"
-    text: "Targeted Facebook & Instagram ad campaigns built around real audience data, not guesswork."
-    link: "/services/facebook-marketing"
-
-  - icon: "fa-brands fa-google"
-    title: "Google Ads"
-    text: "Search and shopping campaigns managed for return on ad spend, not just clicks."
-    link: "/services/google-ads"
+  - icon: "fas fa-bullhorn"
+    title: "Social Media Marketing"
+    text: "Facebook, Instagram, TikTok and Google ad campaigns built around real audience data and managed for return on ad spend."
+    link: "/services/social-media-marketing"
 
   - icon: "fas fa-paint-brush"
     title: "Graphic Designing"

@@ -5,7 +5,7 @@
   {{- end -}}
 {{- end -}}
 
-{{- $services := slice "Web Development" "Shopify Development" "WordPress Development" "Search Engine Optimization" "Facebook Marketing" "Google Ads" "Graphic Designing" "Video Editing" "Digital Strategy" -}}
+{{- $services := slice "Web Development" "Shopify Development" "WordPress Development" "Search Engine Optimization" "Social Media Marketing" "Graphic Designing" "Video Editing" "Digital Strategy" -}}
 {{- $offers := slice -}}
 {{- range $services -}}
   {{- $offers = $offers | append (dict "@type" "Offer" "itemOffered" (dict "@type" "Service" "name" .)) -}}

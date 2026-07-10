@@ -11,13 +11,6 @@
         {{ end }}
       </div>
 
-      <!-- Type toggle -->
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-6">
-        <button class="type-btn active text-sm font-medium px-6 py-2.5 rounded-full border border-[#EAEAEA] text-[#252525] cursor-pointer transition-colors duration-300" data-type="all">All Projects</button>
-        <button class="type-btn text-sm font-medium px-6 py-2.5 rounded-full border border-[#EAEAEA] text-[#252525] cursor-pointer transition-colors duration-300" data-type="shopify">Shopify Stores</button>
-        <button class="type-btn text-sm font-medium px-6 py-2.5 rounded-full border border-[#EAEAEA] text-[#252525] cursor-pointer transition-colors duration-300" data-type="finance">Finance &amp; Analytics</button>
-      </div>
-
       <!-- Category filters -->
       {{ $categories := slice }}
       {{ range $data.shopify }}
@@ -34,7 +27,7 @@
       <!-- Grid -->
       <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6" id="projectGrid">
         {{ range $data.shopify }}
-          <div class="project-card group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300" data-type="shopify" data-category="{{ .slug }}">
+          <div class="project-card group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300" data-category="{{ .slug }}">
             <div class="project-preview relative h-64 overflow-hidden bg-[#F4F4F4] cursor-pointer">
               <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="block h-full">
                 <img src="{{ .image }}" alt="{{ .name }} — Shopify store built by Creatify" loading="lazy" class="w-full h-auto block will-change-transform" style="transition: transform 7s cubic-bezier(0.25, 0.46, 0.45, 0.94);" />
@@ -51,36 +44,11 @@
             </div>
           </div>
         {{ end }}
-
-        {{ range $data.finance }}
-          <div class="project-card group flex flex-col rounded-2xl border border-[#EAEAEA] overflow-hidden hover:shadow-xl hover:border-primary transition-all duration-300" data-type="finance" data-category="finance">
-            <div class="relative h-64 overflow-hidden flex flex-col items-center justify-center gap-4" style="background: {{ .gradient | safeCSS }};">
-              <div class="flex items-center justify-center size-16 rounded-2xl bg-white/20 text-white text-2xl">
-                <i class="{{ .icon }}"></i>
-              </div>
-              <div class="flex flex-wrap items-center justify-center gap-2 px-4">
-                {{ range .tools }}
-                  <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-white/20 text-white">{{ . }}</span>
-                {{ end }}
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 p-6 grow">
-              <h2 class="text-lg font-medium text-[#252525]">{{ .name }}</h2>
-              <span class="self-start text-xs font-medium px-3 py-1 rounded-full bg-primary/10 text-primary">Finance &amp; Analytics</span>
-              <p class="text-sm text-[#868686] leading-relaxed">{{ .description }}</p>
-              <a class="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline pt-2" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
-                View on GitHub <i class="fa-brands fa-github text-sm"></i>
-              </a>
-            </div>
-          </div>
-        {{ end }}
       </div>
     </div>
   </section>
 
   <style>
-    .type-btn.active,
-    .type-btn:hover,
     .filter-btn.active,
     .filter-btn:hover {
       background-color: var(--color-primary);
@@ -90,7 +58,6 @@
     .project-card:hover .project-preview img {
       transform: translateY(var(--scroll-amount, 0%));
     }
-    #categoryFilters.hidden { display: none; }
   </style>
 
   <script>
@@ -114,62 +81,32 @@
         else img.addEventListener('load', apply);
       });
 
-      var typeBtns = document.querySelectorAll('.type-btn');
       var filterBtns = document.querySelectorAll('.filter-btn');
-      var categoryFilters = document.getElementById('categoryFilters');
       var cards = document.querySelectorAll('.project-card');
       var grid = document.getElementById('projectGrid');
-
-      var currentType = 'all';
-      var currentCategory = 'all';
-
-      function updateGrid() {
-        var visible = 0;
-        cards.forEach(function (card) {
-          var cardType = card.dataset.type || 'shopify';
-          var cardCategory = card.dataset.category || '';
-          var typeMatch = currentType === 'all' || cardType === currentType;
-          var catMatch = currentCategory === 'all' || cardCategory === currentCategory;
-          var show = typeMatch && catMatch;
-          card.style.display = show ? 'flex' : 'none';
-          if (show) visible++;
-        });
-        var noResult = grid.querySelector('.no-results');
-        if (visible === 0) {
-          if (!noResult) {
-            noResult = document.createElement('p');
-            noResult.className = 'no-results col-span-full text-center text-[#868686] py-12';
-            noResult.textContent = 'No projects in this category yet.';
-            grid.appendChild(noResult);
-          }
-        } else if (noResult) {
-          noResult.remove();
-        }
-      }
-
-      typeBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          typeBtns.forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          currentType = btn.dataset.type;
-          if (currentType === 'finance') {
-            categoryFilters.classList.add('hidden');
-          } else {
-            categoryFilters.classList.remove('hidden');
-          }
-          currentCategory = 'all';
-          filterBtns.forEach(function (b) { b.classList.remove('active'); });
-          filterBtns[0].classList.add('active');
-          updateGrid();
-        });
-      });
 
       filterBtns.forEach(function (btn) {
         btn.addEventListener('click', function () {
           filterBtns.forEach(function (b) { b.classList.remove('active'); });
           btn.classList.add('active');
-          currentCategory = btn.dataset.filter;
-          updateGrid();
+          var filter = btn.dataset.filter;
+          var visible = 0;
+          cards.forEach(function (card) {
+            var show = filter === 'all' || card.dataset.category === filter;
+            card.style.display = show ? 'flex' : 'none';
+            if (show) visible++;
+          });
+          var noResult = grid.querySelector('.no-results');
+          if (visible === 0) {
+            if (!noResult) {
+              noResult = document.createElement('p');
+              noResult.className = 'no-results col-span-full text-center text-[#868686] py-12';
+              noResult.textContent = 'No projects in this category yet.';
+              grid.appendChild(noResult);
+            }
+          } else if (noResult) {
+            noResult.remove();
+          }
         });
       });
     })();

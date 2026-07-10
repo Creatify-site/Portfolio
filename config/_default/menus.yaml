@@ -32,30 +32,25 @@ main:
     parent: "services"
     weight: 4
 
-  - name: "Facebook Marketing"
-    url: "/services/facebook-marketing"
+  - name: "Social Media Marketing"
+    url: "/services/social-media-marketing"
     parent: "services"
     weight: 5
-
-  - name: "Google Ads"
-    url: "/services/google-ads"
-    parent: "services"
-    weight: 6
 
   - name: "Graphic Designing"
     url: "/services/graphic-designing"
     parent: "services"
-    weight: 7
+    weight: 6
 
   - name: "Video Editing"
     url: "/services/video-editing"
     parent: "services"
-    weight: 8
+    weight: 7
 
   - name: "Digital Strategy"
     url: "/services/digital-strategy"
     parent: "services"
-    weight: 9
+    weight: 8
 
   - name: "Our Work"
     url: "/projects"

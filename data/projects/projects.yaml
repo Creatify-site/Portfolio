@@ -1,4 +1,4 @@
-intro: "26 Shopify stores + 4 Finance & Analytics projects — Shopify Liquid, Excel, Power BI."
+intro: "26 Shopify stores built and customized for brands across fashion, beauty, skincare, footwear, tech and more."
 
 shopify:
   - name: "Meow Meow Tweet"
@@ -156,32 +156,3 @@ shopify:
     slug: "skin-care"
     url: "https://www.rhodeskin.com/"
     image: "/projects/rhode.webp"
-
-finance:
-  - name: "Finance KPIs Dashboard"
-    description: "Real-time Power BI + Excel dashboard tracking revenue, expenses, profit margins, cash flow, and growth trends for business decision-making."
-    tools: ["Power BI", "Excel", "DAX"]
-    url: "https://github.com/alibhatti23/Finance_KPIs_Dashboard"
-    gradient: "linear-gradient(135deg, #023E73 0%, #0077B6 100%)"
-    icon: "fas fa-chart-column"
-
-  - name: "Budget & Forecasting Model"
-    description: "Excel-based financial planning system with scenario analysis, budgeting, and revenue forecasting — built for real business use."
-    tools: ["Excel", "Scenario Analysis", "Forecasting"]
-    url: "https://github.com/alibhatti23/Budget-Forcasting-Model"
-    gradient: "linear-gradient(135deg, #1a5c3a 0%, #2d9e6b 100%)"
-    icon: "fas fa-arrow-trend-up"
-
-  - name: "Sales Performance Analytics"
-    description: "Visualizes business metrics including revenue, profit, expenses, sales trends, and top-performing products across time periods."
-    tools: ["Power BI", "Excel", "Sales Analytics"]
-    url: "https://github.com/alibhatti23/Sales-Performance-Analytics-Dashboard"
-    gradient: "linear-gradient(135deg, #4a1c6b 0%, #8b38c2 100%)"
-    icon: "fas fa-clock"
-
-  - name: "Small Business Bookkeeping System"
-    description: "Structured bookkeeping system for tracking income, expenses, cash flow, and P&L statements — designed for small business owners."
-    tools: ["Excel", "Bookkeeping", "P&L"]
-    url: "https://github.com/alibhatti23/Business-Bookkeeping-System"
-    gradient: "linear-gradient(135deg, #7a3500 0%, #d4620a 100%)"
-    icon: "fas fa-file-invoice-dollar"
