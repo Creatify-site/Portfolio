@@ -16,28 +16,69 @@
 
       <div class="grid xl:grid-cols-5 gap-12 xl:max-w-4xl mx-auto">
         <form
+          id="contact-form"
           class="xl:col-span-3 flex flex-col gap-5"
-          action="{{ printf "mailto:%s" (index site.Params.contact 0) | safeURL }}"
-          method="post"
-          enctype="text/plain"
+          action="{{ site.Params.formspree }}"
+          method="POST"
         >
+          <input type="hidden" name="_subject" value="New Contact Form Submission, Creatify" />
           <div class="flex flex-col gap-2">
             <label class="text-sm font-medium text-[#252525]" for="contact-name">Name</label>
             <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="text" id="contact-name" name="Name" required />
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-sm font-medium text-[#252525]" for="contact-email">Email</label>
-            <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="email" id="contact-email" name="Email" required />
+            <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="email" id="contact-email" name="email" required />
           </div>
           <div class="flex flex-col gap-2">
             <label class="text-sm font-medium text-[#252525]" for="contact-message">What are you looking for help with?</label>
             <textarea class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" id="contact-message" name="Message" rows="5" required></textarea>
           </div>
-          <button class="bg-primary hover:bg-primary/90 rounded-lg px-14 py-3 text-white duration-500 cursor-pointer self-start" type="submit">
+          <button id="contact-form-submit" class="bg-primary hover:bg-primary/90 rounded-lg px-14 py-3 text-white duration-500 cursor-pointer self-start" type="submit">
             Send Message
           </button>
-          <p class="text-xs text-[#868686]">This opens your email app with the message pre-filled — nothing is sent automatically.</p>
+          <p id="contact-form-status" class="text-sm" role="status"></p>
         </form>
+
+        <script>
+          (function () {
+            var form = document.getElementById("contact-form");
+            var button = document.getElementById("contact-form-submit");
+            var status = document.getElementById("contact-form-status");
+
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+              button.disabled = true;
+              button.textContent = "Sending...";
+              status.textContent = "";
+              status.className = "text-sm";
+
+              fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: { Accept: "application/json" },
+              })
+                .then(function (response) {
+                  if (response.ok) {
+                    form.reset();
+                    status.textContent = "Thanks, your message is in. We'll get back to you soon.";
+                    status.className = "text-sm text-primary";
+                  } else {
+                    status.textContent = "Something went wrong. Please try again or email us directly.";
+                    status.className = "text-sm text-red-600";
+                  }
+                })
+                .catch(function () {
+                  status.textContent = "Something went wrong. Please try again or email us directly.";
+                  status.className = "text-sm text-red-600";
+                })
+                .finally(function () {
+                  button.disabled = false;
+                  button.textContent = "Send Message";
+                });
+            });
+          })();
+        </script>
 
         <div class="xl:col-span-2 flex flex-col gap-8 p-8 rounded-2xl bg-[#F4F4F4] h-fit">
           <div>

@@ -2,6 +2,5 @@ enable: true
 
 title: "Get Digital Marketing Tips In Your Inbox"
 method: "post"
-enctype: "text/plain"
 placeholder: "you@example.com"
 label: "SUBSCRIBE"

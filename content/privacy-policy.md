@@ -8,7 +8,7 @@ This policy explains what information Creatify collects when you visit this webs
 
 ## Information We Collect
 
-**Contact form.** When you submit our contact form, we receive the name, email address, and project details you enter.
+**Contact form and newsletter signup.** When you submit our contact form or subscribe to our newsletter, that information is sent through Formspree, a form processing service, which delivers it to our inbox. We receive the name, email address, and project details you enter.
 
 **Booking a call.** When you book a free audit through our scheduling tool (Cal.com), we receive the name, email address, timezone, and any notes you provide for that meeting.
 
@@ -24,6 +24,7 @@ We rely on a small number of trusted third party tools to run this site and our 
 
 - **Google Analytics**, for website usage statistics
 - **Cal.com**, for scheduling consultation calls
+- **Formspree**, for processing contact form and newsletter submissions
 - **Email**, for direct communication about your project
 
 Each of these services has its own privacy policy governing how they handle data on their platforms.

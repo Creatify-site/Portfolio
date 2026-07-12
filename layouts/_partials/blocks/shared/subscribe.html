@@ -2,15 +2,58 @@
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-semibold leading-relaxed text-center xl:max-w-1/3 mx-auto mb-20">{{ .title }}</h2>
     <form
+      id="subscribe-form"
       class="flex flex-col xl:flex-row xl:items-center justify-stretch gap-3.5 xl:max-w-1/2 mx-auto"
       {{ with .method }}method="{{ . }}"{{ end }}
-      action="{{ printf "mailto:%s" (index site.Params.contact 0) | safeURL }}"
-      {{ with .enctype }}enctype="{{ . }}"{{ end }}
+      action="{{ site.Params.formspree }}"
     >
+      <input type="hidden" name="_subject" value="New Newsletter Signup, Creatify" />
       <label for="subscribe-email" class="hidden">Email</label>
-      <input id="subscribe-email" class="bg-white grow-1 shadow rounded-xl px-9 py-5" type="email" name="Email" value="" required {{ with .placeholder }}placeholder="{{ . }}"{{ end }} />
-      <button class="bg-primary hover:bg-primary/90 text-white py-5 px-11 rounded-xl cursor-pointer duration-500" type="submit">{{ default "SUBSCRIBE" .label }}</button>
+      <input id="subscribe-email" class="bg-white grow-1 shadow rounded-xl px-9 py-5" type="email" name="email" value="" required {{ with .placeholder }}placeholder="{{ . }}"{{ end }} />
+      <button id="subscribe-form-submit" class="bg-primary hover:bg-primary/90 text-white py-5 px-11 rounded-xl cursor-pointer duration-500" type="submit">{{ default "SUBSCRIBE" .label }}</button>
     </form>
-    <p class="text-center text-xs text-[#868686] mt-4">This opens your email app with a subscribe request pre-filled, nothing is sent automatically.</p>
+    <p id="subscribe-form-status" class="text-center text-sm mt-4" role="status"></p>
   </div>
 </section>
+
+<script>
+  (function () {
+    var form = document.getElementById("subscribe-form");
+    var button = document.getElementById("subscribe-form-submit");
+    var status = document.getElementById("subscribe-form-status");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      button.disabled = true;
+      var originalLabel = button.textContent;
+      button.textContent = "Sending...";
+      status.textContent = "";
+      status.className = "text-center text-sm mt-4";
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (response) {
+          if (response.ok) {
+            form.reset();
+            status.textContent = "You're subscribed. Thanks for joining!";
+            status.className = "text-center text-sm mt-4 text-primary";
+          } else {
+            status.textContent = "Something went wrong. Please try again.";
+            status.className = "text-center text-sm mt-4 text-red-600";
+          }
+        })
+        .catch(function () {
+          status.textContent = "Something went wrong. Please try again.";
+          status.className = "text-center text-sm mt-4 text-red-600";
+        })
+        .finally(function () {
+          button.disabled = false;
+          button.textContent = originalLabel;
+        });
+    });
+  })();
+</script>
