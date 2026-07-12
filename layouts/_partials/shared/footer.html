@@ -35,8 +35,12 @@
   </div>
   {{ with site.Data.shared.footer.copyright }}
     <div class="border-t border-[#D2D2D2] mt-8">
-      <div class="container mx-auto px-4 flex items-center justify-center pt-8 text-[#686868] text-sm">
-        {{ . }}
+      <div class="container mx-auto px-4 flex flex-col xl:flex-row items-center justify-center gap-2 xl:gap-6 pt-8 text-[#686868] text-sm">
+        <span>{{ . }}</span>
+        <span class="hidden xl:inline">·</span>
+        <a class="hover:text-primary transition-colors duration-300" href="/privacy-policy">Privacy Policy</a>
+        <span class="hidden xl:inline">·</span>
+        <a class="hover:text-primary transition-colors duration-300" href="/terms-of-service">Terms of Service</a>
       </div>
     </div>
   {{ end }}

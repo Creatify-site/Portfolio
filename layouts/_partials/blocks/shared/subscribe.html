@@ -4,11 +4,13 @@
     <form
       class="flex flex-col xl:flex-row xl:items-center justify-stretch gap-3.5 xl:max-w-1/2 mx-auto"
       {{ with .method }}method="{{ . }}"{{ end }}
-      {{ with .action }}action="{{ . }}"{{ end }}
+      action="{{ printf "mailto:%s" (index site.Params.contact 0) | safeURL }}"
+      {{ with .enctype }}enctype="{{ . }}"{{ end }}
     >
       <label for="subscribe-email" class="hidden">Email</label>
-      <input id="subscribe-email" class="bg-white grow-1 shadow rounded-xl px-9 py-5" type="email" name="email" value="" {{ with .placeholder }}placeholder="{{ . }}"{{ end }} />
-      <button class="bg-black text-white py-5 px-11 rounded-xl cursor-pointer hover:bg-black/75 duration-500" type="submit">{{ default "SUBSCRIBE" .label }}</button>
+      <input id="subscribe-email" class="bg-white grow-1 shadow rounded-xl px-9 py-5" type="email" name="Email" value="" required {{ with .placeholder }}placeholder="{{ . }}"{{ end }} />
+      <button class="bg-primary hover:bg-primary/90 text-white py-5 px-11 rounded-xl cursor-pointer duration-500" type="submit">{{ default "SUBSCRIBE" .label }}</button>
     </form>
+    <p class="text-center text-xs text-[#868686] mt-4">This opens your email app with a subscribe request pre-filled, nothing is sent automatically.</p>
   </div>
 </section>

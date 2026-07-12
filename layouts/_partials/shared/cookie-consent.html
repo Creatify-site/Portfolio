@@ -1,0 +1,57 @@
+<div
+  id="cookie-consent"
+  class="hidden fixed bottom-6 left-6 z-40 max-w-sm p-6 rounded-2xl bg-white shadow-xl border border-[#EAEAEA]"
+>
+  <p class="text-sm text-[#545454] leading-relaxed mb-4">
+    We use cookies to understand how visitors use this site, via Google Analytics. See our
+    <a class="text-primary hover:underline" href="/privacy-policy">Privacy Policy</a> for details.
+  </p>
+  <div class="flex items-center gap-3">
+    <button
+      id="cookie-consent-accept"
+      class="bg-primary hover:bg-primary/90 rounded-lg px-6 py-2 text-white text-sm duration-300 cursor-pointer"
+      type="button"
+    >
+      Accept
+    </button>
+    <button
+      id="cookie-consent-decline"
+      class="text-[#868686] hover:text-primary text-sm duration-300 cursor-pointer"
+      type="button"
+    >
+      Decline
+    </button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var STORAGE_KEY = "creatify-cookie-consent";
+    var banner = document.getElementById("cookie-consent");
+    var stored = localStorage.getItem(STORAGE_KEY);
+
+    function updateConsent(granted) {
+      if (typeof gtag === "function") {
+        gtag("consent", "update", {
+          analytics_storage: granted ? "granted" : "denied",
+        });
+      }
+    }
+
+    if (!stored) {
+      banner.classList.remove("hidden");
+    }
+
+    document.getElementById("cookie-consent-accept").addEventListener("click", function () {
+      localStorage.setItem(STORAGE_KEY, "accepted");
+      updateConsent(true);
+      banner.classList.add("hidden");
+    });
+
+    document.getElementById("cookie-consent-decline").addEventListener("click", function () {
+      localStorage.setItem(STORAGE_KEY, "declined");
+      updateConsent(false);
+      banner.classList.add("hidden");
+    });
+  })();
+</script>

@@ -6,8 +6,12 @@
           <h1 class="markdown-title text-4xl xl:text-5xl font-semibold leading-normal mb-6">{{ . | markdownify }}</h1>
         {{ end }}
         {{ with .Description }}
-          <p class="text-[#5C5C5C] leading-relaxed text-lg">{{ . }}</p>
+          <p class="text-[#5C5C5C] leading-relaxed text-lg mb-8">{{ . }}</p>
         {{ end }}
+        <div class="flex flex-col items-center gap-3">
+          <span class="text-[#868686]">Prefer to talk it through live?</span>
+          {{ partial "components/button/cal" (dict "label" "Book a Free Audit Call") }}
+        </div>
       </div>
 
       <div class="grid xl:grid-cols-5 gap-12 xl:max-w-4xl mx-auto">

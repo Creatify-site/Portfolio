@@ -9,6 +9,7 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
+    color-scheme: light;
   }
 
   h1,
@@ -28,4 +29,5 @@
 
 body {
   @apply antialiased;
+  background-color: #ffffff;
 }

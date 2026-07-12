@@ -44,6 +44,17 @@
 {{- if .IsHome }}
   {{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.BaseURL -}}
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+
+  {{- with site.Data.home.faq }}
+    {{- if .enable }}
+      {{- $questions := slice -}}
+      {{- range .items -}}
+        {{- $questions = $questions | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) -}}
+      {{- end -}}
+      {{- $faqSchema := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $questions -}}
+<script type="application/ld+json">{{ $faqSchema | jsonify | safeJS }}</script>
+    {{- end }}
+  {{- end }}
 {{- end }}
 
 {{- if eq .Section "blog" }}
@@ -79,4 +90,16 @@
     -}}
 <script type="application/ld+json">{{ $service | jsonify | safeJS }}</script>
   {{- end }}
+{{- end }}
+
+{{- if not .IsHome }}
+  {{- $breadcrumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.BaseURL) -}}
+  {{- if and .Parent (not .Parent.IsHome) -}}
+    {{- $breadcrumbs = $breadcrumbs | append (dict "@type" "ListItem" "position" 2 "name" .Parent.Title "item" .Parent.Permalink) -}}
+    {{- $breadcrumbs = $breadcrumbs | append (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink) -}}
+  {{- else -}}
+    {{- $breadcrumbs = $breadcrumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{- end -}}
+  {{- $breadcrumbList := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $breadcrumbs -}}
+<script type="application/ld+json">{{ $breadcrumbList | jsonify | safeJS }}</script>
 {{- end }}

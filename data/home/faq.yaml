@@ -1,0 +1,26 @@
+enable: true
+
+title: "Frequently Asked **Questions**"
+text: "Everything you'd usually ask on a first call, answered up front."
+
+items:
+  - question: "How much does a project cost?"
+    answer: "It depends on scope, a landing page and a full Shopify rebuild are different projects. We give you a fixed quote after a short call, not a vague range, so you know exactly what you're paying for before we start."
+
+  - question: "How long does a typical project take?"
+    answer: "Most Shopify and WordPress builds take two to four weeks depending on complexity. SEO and marketing work is ongoing rather than one time, since results build over months, not days."
+
+  - question: "Do I own the website once it's finished?"
+    answer: "Yes. Once the project is paid in full, the site, code, and any custom assets we build are yours, including full admin access. We don't lock you into our hosting or hold your store hostage."
+
+  - question: "Will I be able to update the site myself after launch?"
+    answer: "Yes. We build on platforms like Shopify and WordPress specifically so you can edit products, pages, and content yourself without needing a developer for every small change. We also walk you through the admin before handoff."
+
+  - question: "Do you offer support after the site goes live?"
+    answer: "Yes. Every project includes a support window after launch for fixes and questions, and we offer ongoing maintenance plans for clients who want us on call longer term."
+
+  - question: "What if I don't like the design?"
+    answer: "We build in review rounds throughout the project, not just at the end, so you can course correct early. Revisions are included at each stage rather than treated as an extra cost."
+
+  - question: "Can we talk before I commit to anything?"
+    answer: "Yes, that's exactly what the free audit call is for. We'll look at your current store or site together and tell you honestly what we'd change, no pressure to hire us afterward."

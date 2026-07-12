@@ -2,10 +2,10 @@ enable: true
 
 items:
   - title: "Have a project in mind?"
-    text: "Tell us what you're building and we'll get back to you with a straightforward quote. No lengthy sales calls required."
+    text: "Book a free audit call and we'll walk through your store or site together, what's working, what's not, and what we'd fix first."
     button:
-      label: "Get a Free Quote"
-      link: "/contact"
+      label: "Book a Free Audit"
+      link: "#book-audit"
 
   - title: "Not sure where to start?"
     text: "Take a look at what we do; web development, Shopify, WordPress, SEO, Social Media Marketing, Graphic Designing, Video Editing and more."

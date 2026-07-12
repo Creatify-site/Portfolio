@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section class="relative py-16 xl:py-24">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto xl:max-w-2/3 text-center mb-12">
+        {{ with .Title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-semibold leading-normal mb-4">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Params.updated }}
+          <p class="text-sm text-[#868686]">Last updated {{ . }}</p>
+        {{ end }}
+      </div>
+      <div class="prose prose-lg mx-auto xl:max-w-3xl prose-headings:font-semibold prose-a:text-primary">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}

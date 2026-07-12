@@ -1,0 +1,11 @@
+{{ with site.Params.whatsapp }}
+  <a
+    class="fixed bottom-6 right-6 z-40 flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white text-2xl shadow-lg hover:scale-110 duration-300"
+    href="https://wa.me/{{ . }}?text=Hi%20Creatify%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+{{ end }}

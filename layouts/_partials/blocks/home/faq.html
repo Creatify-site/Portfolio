@@ -1,0 +1,23 @@
+<section id="faq" class="faq relative py-8 xl:py-24">
+  <div class="container mx-auto px-4">
+    {{ with .title }}
+      <h2 class="markdown-title xl:max-w-2/3 mx-auto text-center text-[#252525] font-semibold text-4xl leading-normal mb-4">{{ . | markdownify }}</h2>
+    {{ end }}
+    {{ with .text }}
+      <p class="xl:max-w-1/2 mx-auto text-center text-[#868686] mb-14">{{ . }}</p>
+    {{ end }}
+    {{ if .items }}
+      <div class="xl:max-w-3xl mx-auto flex flex-col gap-4">
+        {{ range .items }}
+          <details class="group rounded-2xl border border-[#EAEAEA] px-6 py-5 open:border-primary/30 open:bg-primary/5 duration-300">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-medium text-[#252525]">
+              {{ .question }}
+              <i class="fas fa-plus text-primary text-sm shrink-0 duration-300 group-open:rotate-45"></i>
+            </summary>
+            <p class="text-[#545454] leading-relaxed mt-4">{{ .answer }}</p>
+          </details>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
