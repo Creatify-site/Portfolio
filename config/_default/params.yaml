@@ -3,12 +3,12 @@ description: "Creatify is a digital agency crafting mobile, web, and brand exper
 images:
   - "images/home/features/feature-1.webp"
 
-# logo: "images/shared/logo.png"
+logo: "images/shared/logo.png"
 
 favicons:
-  themeColor: "#FFFFFF"
-  backgroundColor: "#FFFFFF"
-  faviconColor: "#000000"
+  themeColor: "#0A0A0A"
+  backgroundColor: "#0A0A0A"
+  faviconColor: "#ED6809"
 
 contact:
   - "Support.creatify@gmail.com"

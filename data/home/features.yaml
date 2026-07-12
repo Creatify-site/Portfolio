@@ -5,7 +5,7 @@ text: "We're a small team that works like an in-house one — fast, senior-level
 
 items:
   - icon: "fas fa-bolt"
-    color: "#0077B6"
+    color: "#ED6809"
     pretitle: "Speed"
     pretext: "Always on time"
     title: "**Fast, Reliable** Delivery"
@@ -13,7 +13,7 @@ items:
     image: "images/home/features/feature-1.webp"
 
   - icon: "fas fa-code"
-    color: "#00A8E8"
+    color: "#F2954B"
     pretitle: "Craft"
     pretext: "Senior talent only"
     title: "**Senior-Level** Design & Development"
@@ -21,7 +21,7 @@ items:
     image: "images/home/features/feature-2.webp"
 
   - icon: "fas fa-chart-line"
-    color: "#023E73"
+    color: "#8A3A05"
     pretitle: "Standards"
     pretext: "Built to perform"
     title: "**Results-Driven** Quality"

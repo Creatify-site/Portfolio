@@ -53,7 +53,7 @@
     {{ end }}
 
     {{ with resources.Get "favicon-16x16.png" }}
-      <link rel="icon" type="image/png" sizes="16x16" href="" />
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ .Permalink }}" />
     {{ end }}
 
     {{ with resources.Get "site.webmanifest" }}
@@ -61,12 +61,12 @@
     {{ end }}
 
     {{ with resources.Get "safari-pinned-tab.svg" }}
-      <link rel="mask-icon" href="" color="#FFFFFF" />
+      <link rel="mask-icon" href="{{ .Permalink }}" color="#0A0A0A" />
     {{ end }}
 
 
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#0A0A0A" />
+    <meta name="theme-color" content="#0A0A0A" />
 
     <!-- RSS -->
     {{ range .AlternativeOutputFormats -}}

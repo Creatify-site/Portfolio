@@ -2,9 +2,10 @@
   <div class="container mx-auto flex items-center justify-between px-4 py-6">
     <a class="flex items-center" href="{{ .Site.BaseURL }}">
       {{ with site.Params.logo }}
-        {{ partial "utilities/image.html" (dict "src" . "class" "h-6 w-auto") }}
+        {{ partial "utilities/image.html" (dict "src" . "alt" $.Site.Title "class" "h-12 xl:h-14 w-auto") }}
+      {{ else }}
+        <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
       {{ end }}
-      <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
     </a>
     <button
       class="cursor-pointer xl:hidden"
@@ -23,9 +24,10 @@
       <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden bg-white">
         <a class="flex items-center xl:hidden" href="{{ .Site.BaseURL }}">
           {{ with site.Params.logo }}
-            {{ partial "utilities/image.html" (dict "src" . "class" "h-6 w-auto") }}
+            {{ partial "utilities/image.html" (dict "src" . "alt" $.Site.Title "class" "h-11 w-auto") }}
+          {{ else }}
+            <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
           {{ end }}
-          <span class="text-primary text-xl font-semibold uppercase xl:text-3xl">{{ .Site.Title }}</span>
         </a>
         <button
           class="cursor-pointer xl:hidden"

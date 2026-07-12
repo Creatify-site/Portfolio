@@ -2,7 +2,7 @@
   <div class="text-primary absolute right-0 translate-x-[90%] top-1/2 -translate-y-1/2 -z-10">
     {{ partial "utilities/svg" (dict "src" "images/hero/bg-blob-1.svg")}}
   </div>
-  <div class="text-[#08D3BB] absolute left-0 -translate-x-[90%] bottom-0 -z-10">
+  <div class="text-[#1A1A1A] absolute left-0 -translate-x-[90%] bottom-0 -z-10">
     {{ partial "utilities/svg" (dict "src" "images/hero/bg-blob-2.svg")}}
   </div>
   <div class="container mx-auto px-4">
@@ -76,14 +76,14 @@
       canvas.width = size;
       canvas.height = size;
       var ctx = canvas.getContext('2d');
-      ctx.fillStyle = '#0077B6';
+      ctx.fillStyle = '#ED6809';
       ctx.fillRect(0, 0, size, size);
       ctx.strokeStyle = 'rgba(255,255,255,0.25)';
       ctx.lineWidth = 8;
       ctx.strokeRect(16, 16, size - 32, size - 32);
       ctx.fillStyle = '#ffffff';
       var fs = text.length > 8 ? 34 : 44;
-      ctx.font = 'bold ' + fs + 'px Poppins, Arial, sans-serif';
+      ctx.font = 'bold ' + fs + 'px "Space Grotesk", Arial, sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.shadowColor = 'rgba(0,0,0,0.3)';
