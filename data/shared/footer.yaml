@@ -3,17 +3,22 @@ enable: true
 contact:
   title: "Contact"
   items:
-    - label: "Support.creatify@gmail.com"
-      link: "mailto:Support.creatify@gmail.com"
+    - label: "support@creatify.site"
+      link: "mailto:support@creatify.site"
+      icon: "fas fa-envelope"
 
     - label: "+92-3166710837"
       link: "tel:+923166710837"
+      icon: "fas fa-phone"
 
     - label: "+92-3003626704"
       link: "tel:+923003626704"
+      icon: "fas fa-phone"
 
     - label: "Multan, Pakistan"
       link: "https://www.google.com/maps/search/?api=1&query=30.217500,71.438700"
+      icon: "fas fa-location-dot"
+      newTab: true
 
 
 social:
@@ -25,7 +30,7 @@ social:
     link: "https://www.instagram.com/creatify.site"
   - title: "LinkedIn"
     icon: "fa-brands fa-linkedin"
-    link: "https://www.linkedin.com/in/creatify-site/"
+    link: "https://www.linkedin.com/company/creatify-site/"
   - title: "GitHub"
     icon: "fa-brands fa-github"
     link: "https://github.com/creatify-site"

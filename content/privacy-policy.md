@@ -39,7 +39,7 @@ We keep contact form submissions and booking details for as long as needed to re
 
 ## Your Rights
 
-You can request a copy of the information we hold about you, or ask us to delete it, at any time by emailing us at [Support.creatify@gmail.com](mailto:Support.creatify@gmail.com).
+You can request a copy of the information we hold about you, or ask us to delete it, at any time by emailing us at [support@creatify.site](mailto:support@creatify.site).
 
 ## Changes to This Policy
 
@@ -47,4 +47,4 @@ We may update this policy occasionally as our services or tools change. The date
 
 ## Contact
 
-Questions about this policy can be sent to [Support.creatify@gmail.com](mailto:Support.creatify@gmail.com).
+Questions about this policy can be sent to [support@creatify.site](mailto:support@creatify.site).

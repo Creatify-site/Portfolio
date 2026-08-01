@@ -19,6 +19,17 @@
           </div>
         {{ end }}
       </div>
+      <p class="text-center text-sm text-[#868686] mt-10">
+        Are you a client? <a class="text-primary hover:underline" href="/leave-a-review/">Leave a review</a>
+      </p>
+    {{ else }}
+      <div class="flex flex-col items-center gap-6 xl:max-w-1/2 mx-auto text-center bg-white rounded-2xl p-12 shadow-lg">
+        <i class="fas fa-quote-left text-primary/30 text-4xl"></i>
+        <p class="text-[#545454] leading-relaxed">
+          We're just getting started collecting reviews from real clients. If you've worked with us, be the first to share how it went.
+        </p>
+        {{ partial "components/button/primary" (dict "label" "Leave a Review" "href" "/leave-a-review/") }}
+      </div>
     {{ end }}
   </div>
 </section>

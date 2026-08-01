@@ -1,0 +1,95 @@
+{{ define "main" }}
+  <section class="relative py-16 xl:py-24">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto xl:max-w-2/3 text-center mb-16">
+        {{ with .Title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-semibold leading-normal mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-[#5C5C5C] leading-relaxed text-lg">{{ . }}</p>
+        {{ end }}
+      </div>
+
+      <div class="xl:max-w-2/3 mx-auto">
+        <form id="review-form" class="flex flex-col gap-5" action="{{ site.Params.formspree }}" method="POST">
+          <input type="hidden" name="_subject" value="New Review Submission, Creatify" />
+          <div class="grid xl:grid-cols-2 gap-5">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-medium text-[#252525]" for="review-name">Your Name</label>
+              <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="text" id="review-name" name="Name" required />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-medium text-[#252525]" for="review-role">Role and Company</label>
+              <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="text" id="review-role" name="Role" placeholder="e.g. Founder, Example Store" required />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-[#252525]" for="review-email">Email</label>
+            <input class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" type="email" id="review-email" name="email" required />
+            <p class="text-xs text-[#868686]">Not published, just so we can follow up if needed.</p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-[#252525]" for="review-rating">Rating</label>
+            <select class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary bg-white" id="review-rating" name="Rating" required>
+              <option value="">Select a rating</option>
+              <option value="5 stars">5 stars, excellent</option>
+              <option value="4 stars">4 stars, good</option>
+              <option value="3 stars">3 stars, average</option>
+              <option value="2 stars">2 stars, below average</option>
+              <option value="1 star">1 star, poor</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-sm font-medium text-[#252525]" for="review-text">Your Review</label>
+            <textarea class="border border-[#EAEAEA] rounded-xl px-5 py-3 focus:outline-primary" id="review-text" name="Review" rows="5" placeholder="What did we work on together, and how did it go?" required></textarea>
+          </div>
+          <button id="review-form-submit" class="bg-primary hover:bg-primary/90 rounded-lg px-14 py-3 text-white duration-500 cursor-pointer self-start" type="submit">
+            Submit Review
+          </button>
+          <p id="review-form-status" class="text-sm" role="status"></p>
+          <p class="text-xs text-[#868686]">Submitted reviews are checked before being published on the site, this usually takes a few days.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var form = document.getElementById("review-form");
+      var button = document.getElementById("review-form-submit");
+      var status = document.getElementById("review-form-status");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        button.disabled = true;
+        button.textContent = "Submitting...";
+        status.textContent = "";
+        status.className = "text-sm";
+
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              form.reset();
+              status.textContent = "Thanks for sharing your experience. We'll review it shortly.";
+              status.className = "text-sm text-primary";
+            } else {
+              status.textContent = "Something went wrong. Please try again or email us directly.";
+              status.className = "text-sm text-red-600";
+            }
+          })
+          .catch(function () {
+            status.textContent = "Something went wrong. Please try again or email us directly.";
+            status.className = "text-sm text-red-600";
+          })
+          .finally(function () {
+            button.disabled = false;
+            button.textContent = "Submit Review";
+          });
+      });
+    })();
+  </script>
+{{ end }}

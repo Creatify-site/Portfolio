@@ -48,4 +48,4 @@ We may update these terms from time to time. The date at the top of this page re
 
 ## Contact
 
-Questions about these terms can be sent to [Support.creatify@gmail.com](mailto:Support.creatify@gmail.com).
+Questions about these terms can be sent to [support@creatify.site](mailto:support@creatify.site).
