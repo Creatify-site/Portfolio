@@ -1,4 +1,4 @@
-# Creatify — Agency Portfolio
+# Creatify: Agency Portfolio
 
 Creatify's agency portfolio site, built with [Hugo](https://gohugo.io/) and the [hugo-agency-web](https://github.com/writeonlycode/hugo-agency-web) theme (Tailwind CSS v4).
 
@@ -18,7 +18,7 @@ npm install
 hugo server
 ```
 
-This starts a local preview at `http://localhost:1313` for development only — it's a copy of the site running on your machine, separate from the live production site at [www.creatify.site](https://www.creatify.site/). Changes here aren't visible to the public until committed and pushed to `main`, which triggers a Vercel deploy (see **Deployment** below).
+This starts a local preview at `http://localhost:1313` for development only. It's a copy of the site running on your machine, separate from the live production site at [www.creatify.site](https://www.creatify.site/). Changes here aren't visible to the public until committed and pushed to `main`, which triggers a Vercel deploy (see **Deployment** below).
 
 If you already cloned without `--recurse-submodules`, fetch the theme with:
 
@@ -28,21 +28,24 @@ git submodule update --init --recursive
 
 ## Pages
 
-- **Home** (`/`) — hero with a rotating 3D service cube, services grid, "why choose us", about teaser, latest blog posts, platforms strip, testimonials (disabled until real quotes exist), CTA pair
-- **About** (`/about`) — mission, vision, values, team bios
-- **Services** (`/services`) — overview grid linking to 8 individual service pages (Web Development, Shopify Development, WordPress Development, SEO, Social Media Marketing, Graphic Designing, Video Editing, Digital Strategy), each with a process section and FAQ
-- **Our Work** (`/projects`) — 26 Shopify store projects with category filtering and a hover-to-scroll screenshot preview
-- **Blog** (`/blog`) — 19 posts across Shopify/HTML-5/SEO categories, with category filter pills and thumbnails
-- **Contact** (`/contact`) — mailto-based contact form plus direct contact info
+- **Home** (`/`): hero with a rotating 3D service cube, services grid, about teaser, latest blog posts, platforms strip, testimonials (shows an invite state until real reviews are approved), FAQ, CTA pair
+- **About** (`/about`): mission, vision, values, team bios
+- **Services** (`/services`): overview grid linking to 8 individual service pages (Web Development, Shopify Development, WordPress Development, SEO, Social Media Marketing, Graphic Designing, Video Editing, Digital Strategy), each with a process section and FAQ
+- **Our Work** (`/projects`): 26 Shopify store projects with category filtering and a hover-to-scroll screenshot preview
+- **Blog** (`/blog`): posts across Shopify/HTML-5/SEO categories, with category filter pills, thumbnails, and a helpful/not-helpful feedback widget on each post
+- **Contact** (`/contact`): Formspree-based contact form plus a Cal.com booking link and direct contact info
+- **Leave a Review** (`/leave-a-review`): public review submission form for clients, moderated before publishing
+- **Privacy Policy** / **Terms of Service**: legal pages
+- **404**: custom not-found page
 
 ## Project Structure
 
-- `content/` — pages and blog posts
-- `data/` — structured content for homepage sections and the projects page (hero, services, about, projects, etc.)
-- `config/_default/` — site config, menus, and params
-- `layouts/` — **project-level template overrides**. The theme is never edited directly; any customization (new sections, bug fixes, new page types) lives here and mirrors the theme's own file paths so Hugo's template lookup resolves the project version first. See `layouts/_partials/blocks/home/` for the homepage section partials and `layouts/{about,services,projects,blog,contact}/` for page-specific templates.
-- `themes/hugo-agency-web/` — the Hugo theme (git submodule, unmodified)
-- `static/projects/` — Shopify store screenshots for the Our Work page (served directly, not through Hugo's image pipeline)
+- `content/`: pages and blog posts
+- `data/`: structured content for homepage sections and the projects page (hero, services, about, projects, etc.)
+- `config/_default/`: site config, menus, and params
+- `layouts/`: **project-level template overrides**. The theme is never edited directly; any customization (new sections, bug fixes, new page types) lives here and mirrors the theme's own file paths so Hugo's template lookup resolves the project version first. See `layouts/_partials/blocks/home/` for the homepage section partials and `layouts/{about,services,projects,blog,contact}/` for page-specific templates.
+- `themes/hugo-agency-web/`: the Hugo theme (git submodule, unmodified)
+- `static/projects/`: Shopify store screenshots for the Our Work page (served directly, not through Hugo's image pipeline)
 
 ## Updating the Theme
 
@@ -54,8 +57,8 @@ Because customizations live in project-level `layouts/` overrides rather than ed
 
 ## SEO
 
-- `robots.txt` and `sitemap.xml` are custom templates (`layouts/robots.txt`, `layouts/sitemap.xml`) — the sitemap excludes the auto-generated `/tags/*` archive pages to avoid indexing thin, single-post taxonomy pages
-- Structured data (`layouts/_partials/schema.html`): `ProfessionalService` + `WebSite` sitewide, `BlogPosting` on posts, `Service` on service pages
+- `robots.txt` and `sitemap.xml` are custom templates (`layouts/robots.txt`, `layouts/sitemap.xml`). The sitemap excludes the auto-generated `/tags/*` archive pages to avoid indexing thin, single-post taxonomy pages
+- Structured data (`layouts/_partials/schema.html`): `ProfessionalService` + `WebSite` sitewide, `BlogPosting` on posts, `Service` on service pages, `FAQPage` on the homepage, and `BreadcrumbList` on every non-home page
 - `markup.goldmark.renderer.unsafe: true` is enabled in `hugo.yaml` so tutorial posts can include raw HTML/Liquid code blocks
 
 ## Deployment
@@ -71,11 +74,11 @@ This generates a static site in `public/`, ready to deploy to Netlify, Vercel, o
 This repo includes a `vercel.json` with the build settings Vercel needs (`hugo --gc --minify`, output `public/`, `npm install` for the Tailwind CLI) plus baseline security headers. To connect it:
 
 1. [Import the repo](https://vercel.com/new) into Vercel.
-2. In **Project Settings → Git**, enable **Git Submodules** — the theme is a submodule (`themes/hugo-agency-web`) and won't be cloned otherwise.
+2. In **Project Settings → Git**, enable **Git Submodules**. The theme is a submodule (`themes/hugo-agency-web`) and won't be cloned otherwise.
 3. In **Project Settings → Environment Variables**, add `HUGO_VERSION` = `0.163.2` so Vercel builds with the same Hugo version used locally (must be extended edition, which Vercel provides automatically for recent versions).
 4. Deploy. Every push to `main` will auto-deploy after this.
 
-The site is served at `www.creatify.site` — `baseURL` in `config/_default/hugo.yaml` must match whichever host (apex or `www`) your DNS/host enforces as canonical, or sitemap/schema/OG URLs will all carry an unnecessary redirect.
+The site is served at `www.creatify.site`. `baseURL` in `config/_default/hugo.yaml` must match whichever host (apex or `www`) your DNS/host enforces as canonical, or sitemap/schema/OG URLs will all carry an unnecessary redirect.
 
 ## License
 

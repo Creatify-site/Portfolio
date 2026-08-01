@@ -33,12 +33,68 @@
       </div>
     </div>
 
+    <div class="container mx-auto px-4 mb-16">
+      <div id="post-feedback" class="flex flex-col items-center gap-4 xl:max-w-2xl mx-auto text-center bg-[#F4F4F4] rounded-2xl p-8">
+        <p id="post-feedback-prompt" class="font-medium text-[#252525]">Was this article helpful?</p>
+        <div id="post-feedback-buttons" class="flex items-center gap-3">
+          <button
+            class="flex items-center gap-2 rounded-lg border border-[#EAEAEA] bg-white px-6 py-2.5 text-sm text-[#252525] hover:border-primary hover:text-primary duration-300 cursor-pointer"
+            type="button"
+            data-feedback="Yes"
+          >
+            <i class="fas fa-thumbs-up"></i> Yes
+          </button>
+          <button
+            class="flex items-center gap-2 rounded-lg border border-[#EAEAEA] bg-white px-6 py-2.5 text-sm text-[#252525] hover:border-primary hover:text-primary duration-300 cursor-pointer"
+            type="button"
+            data-feedback="No"
+          >
+            <i class="fas fa-thumbs-down"></i> No
+          </button>
+        </div>
+        <p id="post-feedback-status" class="text-sm text-primary hidden" role="status">Thanks for letting us know.</p>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var wrap = document.getElementById("post-feedback");
+        if (!wrap) return;
+        var prompt = document.getElementById("post-feedback-prompt");
+        var buttons = document.getElementById("post-feedback-buttons");
+        var status = document.getElementById("post-feedback-status");
+
+        buttons.querySelectorAll("button").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            if (buttons.classList.contains("done")) return;
+            buttons.classList.add("done");
+
+            var data = new FormData();
+            data.append("_subject", "Blog Feedback, Creatify");
+            data.append("Post", document.title);
+            data.append("URL", window.location.href);
+            data.append("Helpful", btn.getAttribute("data-feedback"));
+
+            fetch("{{ site.Params.formspree }}", {
+              method: "POST",
+              body: data,
+              headers: { Accept: "application/json" },
+            }).catch(function () {});
+
+            prompt.classList.add("hidden");
+            buttons.classList.add("hidden");
+            status.classList.remove("hidden");
+          });
+        });
+      })();
+    </script>
+
     {{ if .Params.tags }}
       <div class="container mx-auto px-4 mb-28">
         <div class="flex flex-wrap items-center justify-center gap-2 xl:max-w-2xl mx-auto">
           <span class="text-xs font-medium text-[#868686] mr-1">Tagged:</span>
           {{ range first 6 .Params.tags }}
-            <a class="text-xs text-[#868686] bg-[#F4F4F4] hover:bg-primary/10 hover:text-primary transition-colors duration-300 rounded-full px-3 py-1" href="{{ printf "%s/tags/%s" site.BaseURL . | urlize }}">{{ . }}</a>
+            <a class="text-xs text-[#868686] bg-[#F4F4F4] hover:bg-primary/10 hover:text-primary transition-colors duration-300 rounded-full px-3 py-1" href="{{ printf "%stags/%s" site.BaseURL (. | urlize) | safeURL }}">{{ . }}</a>
           {{ end }}
         </div>
       </div>

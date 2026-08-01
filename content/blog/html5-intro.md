@@ -41,9 +41,9 @@ keywords:
 Author: Creatify
 ---
 
-[HTML5](https://html5up.net/) has long since become the standard markup language for web development, and it's the foundation nearly every modern site is still built on today. Despite that, plenty of developers never fully learn its properties beyond the basics — this article covers the key features worth knowing to build a solid foundation.
+[HTML5](https://html5up.net/) has long since become the standard markup language for web development, and it's the foundation nearly every modern site is still built on today. Despite that, plenty of developers never fully learn its properties beyond the basics. This article covers the key features worth knowing to build a solid foundation.
 
-Several elements introduced in this language are now supported natively across every major browser — Chrome, Firefox, Safari, and Edge — with no plugins or workarounds required.
+Several elements introduced in this language are now supported natively across every major browser (Chrome, Firefox, Safari, and Edge) with no plugins or workarounds required.
 
 ## HTML 5 and multimedia content
 

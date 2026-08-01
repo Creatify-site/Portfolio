@@ -38,7 +38,7 @@ Author: Creatify
 
 **Are you tired of broken CSS, z-index wars, and buggy AI-generated code on your Shopify store?**
 
-As a [Shopify Partner](/contact) that has built over 200 stores, we've heard that frustration. We've been sharing free Shopify sections on [**GitHub**](https://github.com/alibhatti23) for a while now — so we built something better for you.
+As a [Shopify Partner](/contact) that has built over 200 stores, we've heard that frustration. We've been sharing free Shopify sections on [**GitHub**](https://github.com/alibhatti23) for a while now, so we built something better for you.
 
 ## Introducing the Ultimate Shopify GitHub Repository
 

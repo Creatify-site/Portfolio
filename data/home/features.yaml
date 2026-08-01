@@ -1,7 +1,7 @@
 enable: false
 
 title: "Why Businesses Choose **Creatify**"
-text: "We're a small team that works like an in-house one — fast, senior-level, and accountable for the results."
+text: "We're a small team that works like an in-house one: fast, senior-level, and accountable for the results."
 
 items:
   - icon: "fas fa-bolt"
@@ -9,7 +9,7 @@ items:
     pretitle: "Speed"
     pretext: "Always on time"
     title: "**Fast, Reliable** Delivery"
-    text: "We prioritize clear communication and quick turnarounds, so you always know where your project stands — and it lands exactly when we said it would."
+    text: "We prioritize clear communication and quick turnarounds, so you always know where your project stands, and it lands exactly when we said it would."
     image: "images/home/features/feature-1.webp"
 
   - icon: "fas fa-code"
@@ -17,7 +17,7 @@ items:
     pretitle: "Craft"
     pretext: "Senior talent only"
     title: "**Senior-Level** Design & Development"
-    text: "Every project is handled by experienced designers and developers, not junior hand-offs — so the details that make a site feel premium actually get the attention they need."
+    text: "Every project is handled by experienced designers and developers, not junior hand-offs, so the details that make a site feel premium actually get the attention they need."
     image: "images/home/features/feature-2.webp"
 
   - icon: "fas fa-chart-line"
@@ -25,6 +25,6 @@ items:
     pretitle: "Standards"
     pretext: "Built to perform"
     title: "**Results-Driven** Quality"
-    text: "We hold every build to the same bar: fast load times, clean code, and measurable outcomes — because a beautiful site that doesn't convert isn't doing its job."
+    text: "We hold every build to the same bar: fast load times, clean code, and measurable outcomes, because a beautiful site that doesn't convert isn't doing its job."
     image: "images/home/features/feature-3.webp"
   
