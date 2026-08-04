@@ -1,0 +1,21 @@
+# Creatify
+
+> Creatify is a digital media agency based in Multan, Pakistan, building websites, Shopify and WordPress stores, and running SEO and social media marketing for small and mid sized businesses. Senior-level work handled directly by the team, no junior hand offs.
+
+## Services
+
+- [Web Development](https://www.creatify.site/services/web-development/): Custom, fast, responsive websites built to convert visitors into customers.
+- [Shopify Development](https://www.creatify.site/services/shopify-development/): Custom Shopify storefronts, theme customization, and app integrations for ecommerce brands.
+- [WordPress Development](https://www.creatify.site/services/wordpress-development/): Custom WordPress themes, plugin development, and maintainable builds.
+- [Search Engine Optimization](https://www.creatify.site/services/seo/): Technical SEO, content strategy, and on-page optimization for long-term organic growth.
+- [Social Media Marketing](https://www.creatify.site/services/social-media-marketing/): Facebook, Instagram, TikTok, and Google ad campaigns managed for return on ad spend.
+- [Graphic Designing](https://www.creatify.site/services/graphic-designing/): Logos, brand identity, and marketing visual assets.
+- [Video Editing](https://www.creatify.site/services/video-editing/): Editing for social media, ads, and marketing campaigns.
+- [Digital Strategy](https://www.creatify.site/services/digital-strategy/): Data-driven strategy that ties website, SEO, and ad work together.
+
+## Company
+
+- [About Us](https://www.creatify.site/about/): Mission, team, and how Creatify works with clients.
+- [Our Work](https://www.creatify.site/projects/): Portfolio of Shopify stores built by Creatify.
+- [Contact](https://www.creatify.site/contact/): Get in touch or book a free audit call.
+- [Blog](https://www.creatify.site/blog/): Guides on Shopify, WordPress, SEO, and web development.

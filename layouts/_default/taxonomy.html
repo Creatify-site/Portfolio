@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="py-16">
+    <div class="container mx-auto px-4 mb-16">
+      <div class="mx-auto xl:max-w-1/2 text-center">
+        {{ with .Title }}
+          <h1 class="markdown-title text-4xl xl:text-5xl font-bold xl:leading-normal mb-6">{{ . | markdownify }}</h1>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ if .Data.Terms }}
+      <div class="container mx-auto px-4 grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-28">
+        {{ range .Data.Terms.Alphabetical }}
+          <a href="{{ .Page.Permalink }}" class="flex flex-col gap-2 p-8 rounded-2xl border border-[#EAEAEA] hover:border-primary hover:shadow-xl transition-all duration-300">
+            <h2 class="text-lg font-medium text-[#252525]">{{ .Page.Title }}</h2>
+            <span class="text-sm text-[#868686]">{{ .Count }} post{{ if ne .Count 1 }}s{{ end }}</span>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
