@@ -2,8 +2,8 @@
 title: "WordPress vs Shopify 2026"
 draft: false
 date: 2026-08-05
-image: "images/blog/shopify/wordpress-vs-shopify-2026"
-description: "WordPress vs Shopify compared in depth for 2026 — architecture, cost, performance, SEO, security, and scalability. Find the right platform before you build."
+image: "images/blog/shopify/wordpress-vs-shopify-2026.webp"
+description: "WordPress vs Shopify compared in depth for 2026: architecture, cost, performance, SEO, security, and scalability. Find the right platform before you build."
 categories:
   - Wordpress
   - Shopify
@@ -73,7 +73,7 @@ Storefronts are built with Liquid, Shopify's templating language, using the OS 2
 
 - WordPress gives you the keys to the whole car. Shopify gives you a very well-engineered car you're not allowed to open the hood on and mostly, you won't need to.
 
-[WordPress vs Shopify architecture diagram](images/blog/shopify/wordpress-vs-shopify-architecture.webp)
+![WordPress vs Shopify architecture diagram](/blog-assets/Shopify/img-16.webp)
 
 ## 2. Cost
 
@@ -120,7 +120,7 @@ Shopify's customization is strong specifically for storefronts, using Liquid, se
 
 - Shopify for guaranteed baseline performance. WordPress for a higher ceiling if you invest in proper hosting and optimization.
 
-[Core Web Vitals comparison WordPress vs Shopify](images/blog/shopify/wordpress-vs-shopify-pagespeed.webp)
+![Core Web Vitals comparison WordPress vs Shopify](/blog-assets/Shopify/img-17.webp)
 
 ## 6. SEO
 
@@ -194,7 +194,7 @@ Choose **WordPress** if:
 
 Neither platform is "better" in the abstract. The right choice depends on what the site needs to do, who's running it day to day, and where you want to be in three years.
 
-[WordPress vs Shopify comparison table 2026](images/blog/shopify/wordpress-vs-shopify-comparison-table.webp)
+![WordPress vs Shopify comparison table 2026](/blog-assets/Shopify/img-18.webp)
 
 ## Still not sure?
 
