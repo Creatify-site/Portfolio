@@ -1,6 +1,90 @@
-intro: "26 Shopify stores built and customized for brands across fashion, beauty, skincare, footwear, tech and more."
+intro: "Shopify stores built and customized for brands across fashion, beauty, skincare, footwear, tech and more."
 
 shopify:
+  - name: "Akbar Aslam"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://www.akbaraslam.com/"
+    image: "/projects/akbar-aslam.webp"
+
+  - name: "Barooque"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://baroque.pk/"
+    image: "/projects/barooque.webp"
+
+  - name: "Imqaan"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://imqaan.com/"
+    image: "/projects/imqaan.webp"
+
+  - name: "Lulsar"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://www.lulusar.com/"
+    image: "/projects/lulsar.webp"
+
+  - name: "Mad Official"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://madofficialstore.shop/"
+    image: "/projects/madofficial.webp"
+
+  - name: "So Kamal"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://www.sokamal.com/"
+    image: "/projects/sokamal.webp"
+
+  - name: "Weave Wardobe"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://weavewardrobe.com/"
+    image: "/projects/weave-wardrobe.webp"
+
+  - name: "Zarif"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://zarif.pk/"
+    image: "/projects/zarif.webp"
+
+  - name: "Zara Shahjahan"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://zarashahjahan.com/"
+    image: "/projects/zarashahjahan.webp"
+
+  - name: "Ak Jewels"
+    category: "Jewelry"
+    slug: "jewelry"
+    url: "https://akjewels.pk/"
+    image: "/projects/akjewels.webp"
+
+  - name: "Jadeno"
+    category: "Jewelry"
+    slug: "jewelry"
+    url: "https://jadeno.pk/"
+    image: "/projects/jadeno.webp"
+
+  - name: "Jewelery Line"
+    category: "Jewelry"
+    slug: "jewelry"
+    url: "https://jewelryline.co/"
+    image: "/projects/jewelryline.webp"
+
+  - name: "RS Zevar"
+    category: "Jewelry"
+    slug: "jewelry"
+    url: "https://rszevar.com/"
+    image: "/projects/rszevar.webp"
+
+  - name: "zeesy"
+    category: "Jewelry"
+    slug: "jewelry"
+    url: "https://zeesy.pk/"
+    image: "/projects/zeesy.webp"  
+  
   - name: "Meow Meow Tweet"
     category: "Skin Care"
     slug: "skin-care"
@@ -44,8 +128,8 @@ shopify:
     image: "/projects/wild-one.webp"
 
   - name: "Maje"
-    category: "Cloth"
-    slug: "cloth"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://www.maje.ae/"
     image: "/projects/maje.webp"
 
@@ -62,8 +146,8 @@ shopify:
     image: "/projects/our-place.webp"
 
   - name: "Negative Underwear"
-    category: "Apparel"
-    slug: "apparel"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://negativeunderwear.com/"
     image: "/projects/negative-underwear.webp"
 
@@ -74,8 +158,8 @@ shopify:
     image: "/projects/lalo.webp"
 
   - name: "Parks Project"
-    category: "Outdoor"
-    slug: "outdoor"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://www.parksproject.us/"
     image: "/projects/parks-project.webp"
 
@@ -92,8 +176,8 @@ shopify:
     image: "/projects/native-union.webp"
 
   - name: "Kotn"
-    category: "Fashion"
-    slug: "fashion"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://kotn.com/"
     image: "/projects/kotn.webp"
 
@@ -110,14 +194,14 @@ shopify:
     image: "/projects/gharyal.webp"
 
   - name: "Nureh"
-    category: "Cloth"
-    slug: "cloth"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://nureh.pk/"
     image: "/projects/nureh.webp"
 
   - name: "Manto"
-    category: "Streetwear"
-    slug: "streetwear"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://www.shopmanto.com/"
     image: "/projects/manto.webp"
 
@@ -134,8 +218,8 @@ shopify:
     image: "/projects/optic-world.webp"
 
   - name: "Iron Gear"
-    category: "Sportswear"
-    slug: "sportwear"
+    category: "Clothing"
+    slug: "clothing"
     url: "https://theirongear.com/"
     image: "/projects/iron-gear.webp"
 
@@ -156,3 +240,5 @@ shopify:
     slug: "skin-care"
     url: "https://www.rhodeskin.com/"
     image: "/projects/rhode.webp"
+  
+  
