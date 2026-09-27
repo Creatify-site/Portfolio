@@ -25,11 +25,17 @@ shopify:
     url: "https://www.lulusar.com/"
     image: "/projects/lulsar.webp"
 
-  - name: "Mad Official"
+  - name: "Suta"
     category: "Clothing"
     slug: "clothing"
-    url: "https://madofficialstore.shop/"
-    image: "/projects/madofficial.webp"
+    url: "https://suta.in//"
+    image: "/projects/suta.webp"
+
+  - name: "Khara kapas"
+    category: "Clothing"
+    slug: "clothing"
+    url: "https://kharakapas.com/"
+    image: "/projects/kharakapas.webp"
 
   - name: "So Kamal"
     category: "Clothing"
